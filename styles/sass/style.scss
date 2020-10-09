@@ -1,0 +1,11 @@
+@import "./partials/setup";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/variables";
+
+// General
+
+// stripping styles
+h1 {
+  color: green;
+}
