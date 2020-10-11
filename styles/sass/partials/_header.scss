@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  // margin: 0 auto;
+  min-height: 6vh;
+  top: 0;
+  z-index: 1030;
+  border-bottom: 1px solid red;
+  background-color: black;
+  color: $neonGreen !important;
+
+  .menuToggleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.5rem 6rem;
+
+    .logoImg,
+    .menuToggle {
+      height: 50px;
+      width: 50px;
+    }
+
+    .menuBar {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
+
+ul {
+  display: flex;
+  padding: 15px 0 20px;
+  justify-content: space-around;
+  font-weight: 700;
+
+  li {
+    display: inline-block;
+    position: relative;
+
+    a {
+      font-family: $bodyFont;
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      padding: 30px 15px;
+    }
+  }
+}

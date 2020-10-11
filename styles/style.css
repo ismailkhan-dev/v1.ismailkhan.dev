@@ -235,6 +235,455 @@ html {
   overflow: hidden;
 }
 
-h1 {
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  min-height: 6vh;
+  top: 0;
+  z-index: 1030;
+  border-bottom: 1px solid red;
+  background-color: black;
+  color: #08d665 !important;
+}
+
+header .menuToggleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem 6rem;
+}
+
+header .menuToggleContainer .logoImg,
+header .menuToggleContainer .menuToggle {
+  height: 50px;
+  width: 50px;
+}
+
+header .menuToggleContainer .menuBar {
+  width: 45px;
+  height: 45px;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: 700;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  font-family: "Fira Code", monospace;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 30px 15px;
+}
+
+footer {
+  height: 40vh;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Fira Code", monospace;
+}
+
+footer p {
+  font-size: 3rem;
+  color: white;
+}
+
+footer span {
   color: green;
+}
+
+.home {
+  background-color: gray;
+  margin: auto 0;
+}
+
+.heroImgGif {
+  height: 300px;
+  width: 400px;
+}
+
+.heroContainer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heroContainer .heroContent .heroTitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.heroContainer .heroContent .heroRole,
+.heroContainer .heroContent .heroTagline {
+  font-family: "Fira Code", monospace;
+  padding-bottom: 2rem;
+}
+
+.heroContainer .heroContent .heroRole {
+  font-size: 3rem;
+}
+
+.heroContainer .heroContent .heroTagline {
+  font-size: 1.6rem;
+}
+
+.heroContainer .heroImage {
+  padding-left: 40px;
+}
+
+.bio {
+  background-color: rosybrown;
+}
+
+.bio .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bio .flexContainer p {
+  font-size: 2.3rem;
+  line-height: 2.4rem;
+  font-family: "Fira Code", monospace;
+  padding-bottom: 10px;
+}
+
+.bio .flexContainer p:first-child {
+  margin-top: -0.15em;
+}
+
+.bioProfileImg {
+  padding-right: 50px;
+  height: 400px;
+  width: 400px;
+}
+
+.skills {
+  background-color: gray;
+}
+
+.skills .sectionHeading {
+  text-align: center;
+}
+
+.centerContainer {
+  height: 50vh;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.centerContainer .skillContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.centerContainer .skillContainer .skillBox {
+  margin: 20px 10px;
+}
+
+.centerContainer .skillsImg {
+  height: 65px;
+  width: 65px;
+  margin: 5px 20px;
+}
+
+.centerContainer p {
+  font-family: "Fira Code", monospace;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.projects {
+  background-color: rosybrown;
+}
+
+.projectItemRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+}
+
+.projectItemRow .projectItemDisplay {
+  margin-right: 40px;
+  width: 55%;
+}
+
+.projectItemRow .projectItemContent {
+  border: 1px solid green;
+  width: 40%;
+  line-height: 2.1rem;
+}
+
+.projectItemRow .projectItemContent .projectTools,
+.projectItemRow .projectItemContent .projectTitle,
+.projectItemRow .projectItemContent .projectDescription,
+.projectItemRow .projectItemContent .projectBtn {
+  padding-bottom: 20px;
+  font-family: "Fira Code", monospace;
+}
+
+.projectItemRow .projectItemContent .projectTools {
+  font-size: 3rem;
+  font-family: "Fira Code", monospace;
+}
+
+.projectItemRow .projectItemContent .projectTitle {
+  font-size: 2.6rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.projectItemRow .projectItemContent .projectDescription {
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.projectItemRow .projectItemContent .projectBtn {
+  width: 300px;
+  height: 300px;
+  display: inline;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: teal;
+}
+
+.projectItemRow .projectItemContent .fa-github-alt {
+  margin-right: 5px;
+  font-size: 4rem;
+}
+
+.projectItemRow .projectItemContent .projectBtn,
+.projectItemRow .projectItemContent .fa-github-alt {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.articles {
+  background-color: gray;
+}
+
+.singleArticle {
+  width: 360px;
+  margin-right: 30px;
+  min-height: 400px;
+  background-color: white;
+}
+
+.singleArticle .articleContents {
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #f1f1f1;
+  position: relative;
+  z-index: 2;
+}
+
+.singleArticle a {
+  color: black;
+  font-size: 2rem;
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+}
+
+.singleArticle p {
+  color: black;
+  font-size: 1.7rem;
+  font-family: "Roboto Slab", serif;
+  padding: 30px 0;
+}
+
+.singleArticle .readmoreBtn {
+  color: #22cd6f;
+}
+
+.singleArticle .fa-long-arrow-alt-right {
+  padding-right: 7px;
+}
+
+.articleCarousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact {
+  background-color: wheat;
+}
+
+.contact .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+
+.formContent {
+  width: 50%;
+  height: 100%;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 50px 20px;
+  border: 1px solid red;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+i {
+  padding: 0;
+  margin: 0;
+}
+
+.headingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+small {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #08d665;
+  font-family: "Roboto Slab", serif;
+}
+
+.sectionHeading {
+  font-size: 3.3rem;
+  font-family: "Fira Code", monospace;
+  padding-bottom: 35px;
+}
+
+.headingTag {
+  border: 1px solid red;
+  font-family: "Fira Code", monospace;
+  font-size: 1.6rem;
+  width: 20vw;
+  padding: 10px;
+  padding-left: 20px;
+  border-left: 5px solid green;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#d30909), to(transparent));
+  background-image: linear-gradient(to right, transparent, #d30909, transparent);
 }

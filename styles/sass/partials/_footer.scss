@@ -1,0 +1,19 @@
+@import "./variables";
+
+footer {
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $bodyFont;
+
+  p {
+    font-size: 3rem;
+    color: white;
+  }
+
+  span {
+    color: green;
+  }
+}

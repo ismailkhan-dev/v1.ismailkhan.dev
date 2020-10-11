@@ -1,0 +1,29 @@
+.bio {
+  background-color: rosybrown;
+
+  .flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    
+    p {
+      font-size: 2.3rem;
+      line-height: 2.4rem;
+      font-family: $bodyFont;
+      padding-bottom: 10px;
+    }
+
+    p:first-child {
+      margin-top: -0.15em;
+    }
+
+  } 
+}
+
+.bioProfileImg {
+  padding-right: 50px;
+  height: 400px;
+  width: 400px;
+}

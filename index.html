@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto+Slab:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Oswald:wght@400;500;700&family=Roboto+Slab:wght@400;700;900&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome -->
@@ -31,38 +31,385 @@
   </head>
   <body>
     <!-- header (takes 100vh) -->
-      <!-- fixed navbar -->
+    <header>
+      <div class="wrapper">
+        <!-- fixed navbar -->
         <!-- logo to the leftmost side -->
-        <!-- hamburger menu to the rightmost -->
+        <div class="menuToggleContainer">
+          <div class="logoContainer">
+            <img
+              src="./assets/curly-braces-logo.svg"
+              alt=""
+              srcset=""
+              class="logoImg"
+            />
+            <p>{Ismail Khan}</p>
+          </div>
 
-      <!-- hero start -->
-        <!-- h1: Ismail Khan  -->
-        <!-- I'm a Front-End Developer typed out animation -->
-        <!-- indicator informing you can scroll down -->
+          <!-- use stellarnav js plugin -->
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#bio">About</a></li>
+              <li><a href="#skills">Toolkit</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#articles">Articles</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- hamburger menu to the rightmost -->
+          <a href="" class="menuToggle">
+            <img
+              src="./assets/icons8-menu.svg"
+              alt=""
+              srcset=""
+              class="menuBar"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home">
+      <div class="wrapper">
+        <div class="heroContainer">
+          <div class="heroContent">
+            <!-- h1: Ismail Khan  -->
+            <h1 class="heroTitle">Hello, I'm Ismail Khan 🚀</h1>
+            <!-- I'm a Front-End Developer typed out animation -->
+            <h4 class="heroRole">Front-End Developer</h4>
+            <p class="heroTagline">
+              I'm a professional web developer with a passion for creating
+              modern and robust web apps.
+            </p>
+          </div>
+
+          <div class="heroImage">
+            <div class="heroImgContainer">
+              <img src="./assets/hero-img-gif.gif" alt="" class="heroImgGif" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- indicator informing you can scroll down -->
+    </section>
 
     <!-- bio section -->
-      <!-- bio (max 500 words) -->
-      <!-- photo -->
+    <section class="bio">
+      <div class="wrapper">
+        <div class="flexContainer">
+          <!-- bio (max 500 words) -->
+          <div>
+            <h2 class="sectionHeading">About Me</h2>
+            <p>Front-End Developer</p>
+            <p>
+              Hey, Ismail Khan here! I'm very passionate in building modern web
+              apps and utilizing best practices.
+            </p>
+            <p>
+              I'm a Juno College Web Dev Bootcamp graduate. I have a background
+              in accounting and finance, I hold a B.Comm in Business Management
+              from Ryerson University. I'm based out of Toronto, Canada.
+            </p>
+            <p>
+              Did I mention I love to code? I also love to hike during the
+              off-winter seasons and immerse myself in many many books.
+            </p>
+            <div>
+              <button>Download CV</button>
+              <button>Get in Touch</button>
+            </div>
+          </div>
+
+          <!-- photo -->
+          <img src="/assets/profile-pic.png" alt="" class="bioProfileImg" />
+        </div>
+      </div>
+    </section>
 
     <!-- skills section  -->
+    <section class="skills">
+      <div class="wrapper">
+        <h2 class="sectionHeading">Toolkit</h2>
+        <div class="centerContainer">
+          <div class="skillContainer">
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/html5.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>HTML5</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/css3.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>CSS3</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/javascript.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>JavaScript</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/jquery.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>jQuery</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/react.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>React.js</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/sass.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>Sass</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/firebase.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>Firebase</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/git.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>Git</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/nodejs.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>Node.js</p>
+            </div>
+            <div class="skillBox">
+              <img
+                src="./assets/skills-icons/mongodb.svg"
+                alt=""
+                class="skillsImg"
+              />
+              <p>MonogDB</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- skills table can easily allow more skills to be added on -->
       <!-- use coloured high rendered icons -->
+    </section>
 
-    <!-- portfolio section -->
-      <!-- each project container should be distinguisable from each other -->
-      <!-- each project preview (either img or gif) should be consistent -->
-      <!-- include live demo and repo links -->
+    <!-- horizontal line divider -->
+    <div class="divider"></div>
+
+    <!-- projects section -->
+    <section class="projects">
+      <div class="wrapper">
+        <div class="headingContainer">
+          <small>Highlighted</small>
+          <h2 class="sectionHeading">Projects</h2>
+          <p class="headingTag">
+            View work I've done using React, Firebase, ES6, and much more!
+          </p>
+        </div>
+
+        <!-- project 01 -->
+        <div class="projectItemRow">
+          <div class="projectItemDisplay">
+            <img src="./assets/project-clips/giphy-sentiment.png" alt="" />
+          </div>
+
+          <div class="projectItemContent">
+            <!-- tools used -->
+            <p class="projectTools">React - Firebase - JSX - REST API</p>
+            <!-- project title -->
+            <h2 class="projectTitle">Giphy Sentiment App</h2>
+            <!-- short description -->
+            <p class="projectDescription">
+              This React app, built with mob programming, provides a interactive
+              and fun way to caputre and represent people's emotional state
+              using gifs! A neat timeline is featured that allows a user to view
+              the changes in the emotional state of people throughout the year.
+            </p>
+            <!-- live site and repo links -->
+            <div>
+              <a
+                href="http://https://giphy-sentiment.github.io/project-6/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="projectBtn"
+                >Live Site</a
+              >
+              <a
+                href="http://https://github.com/ismailkhanio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="projectBtn"
+                ><i class="fab fa-github-alt"></i>Repo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- article section -->
-      <!-- something that shows the title of my blogs but links to medium -->
-      
+    <section class="articles">
+      <div class="wrapper">
+        <!-- heading text -->
+        <div class="headingContainer">
+          <small>Recent</small>
+          <h2 class="sectionHeading">Articles</h2>
+          <p class="headingTag">
+            View my writing on coding, internet, and technology all on Medium!
+          </p>
+        </div>
+
+        <!-- article carousel -->
+        <div class="articleCarousel">
+          <div class="singleArticle">
+            <div class="articleContents">
+              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
+                >From Accounting to a Front-End Web Development Boot Camp, A
+                Short Career Change Story.</a
+              >
+              <p>July 20, 2020</p>
+              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
+                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
+              >
+            </div>
+          </div>
+          <div class="singleArticle">
+            <div class="articleContents">
+              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
+                >From Accounting to a Front-End Web Development Boot Camp, A
+                Short Career Change Story.</a
+              >
+              <p>July 20, 2020</p>
+              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
+                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
+              >
+            </div>
+          </div>
+          <div class="singleArticle">
+            <div class="articleContents">
+              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
+                >From Accounting to a Front-End Web Development Boot Camp, A
+                Short Career Change Story.</a
+              >
+              <p>July 20, 2020</p>
+              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
+                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- something that shows the title of my blogs but links to medium -->
+
     <!-- contact section -->
-      <!-- contact form -->
-      <!-- contact info and email -->
-      <!-- button for resume -->
-    
+    <section class="contact">
+      <div class="wrapper">
+        <h2 class="sectionHeading">Contact</h2>
+        <div class="flexContainer">
+          <div class="formContent">
+            <p>Let's get in touch and chat about technology.</p>
+            <p>
+              <i class="far fa-paper-plane"></i>Email:
+              <a href="mailto:me@ismailkhan.io">me@ismailkhan.io</a>
+            </p>
+            <!-- social media links -->
+            <div>
+              <!-- Linkedin -->
+              <i class="fab fa-linkedin"></i>
+              <!-- Github -->
+              <i class="fab fa-github"></i>
+              <!-- Twitter -->
+              <i class="fab fa-twitter"></i>
+              <!-- Medium -->
+              <i class="fab fa-medium"></i>
+              <!-- Email -->
+              <i class="far fa-paper-plane"></i>
+            </div>
+            <!-- link for resume -->
+          </div>
+          <div class="formContainer">
+            <form
+              id="fc-frm"
+              name="contactForm"
+              accept-charset="UTF-8"
+              action="https://formcarry.com/s/bDP_HbI5pc"
+              method="POST"
+            >
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="fullName"
+                  placeholder="Enter your name here..."
+                  required=""
+                />
+                <label for="emailAddress">Email Address</label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="emailAddress"
+                  placeholder="email@domain.tld"
+                  required=""
+                />
+                <label for="message">Message</label>
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message here!"
+                  required=""
+                ></textarea>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Submission"
+                />
+              </fieldset>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
+    <footer>
       <!-- my name and copyright -->
+      <p>Copyright © 2020 by <span>Ismail Khan</span> All Rights Reserved</p>
+    </footer>
   </body>
   <!-- js script -->
   <script src="app.js"></script>

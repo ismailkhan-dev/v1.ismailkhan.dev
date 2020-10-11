@@ -1,0 +1,45 @@
+.home {
+  background-color: gray;
+  margin: auto 0;
+}
+.heroImgGif {
+  height: 300px;
+  width: 400px;
+}
+
+.heroContainer {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // content
+  .heroContent {
+    .heroTitle {
+      font-family: $headingFont;
+      font-size: 5rem;
+      padding-bottom: 2rem;
+    }
+
+    .heroRole,
+    .heroTagline {
+      font-family: $bodyFont;
+      padding-bottom: 2rem;
+    }
+
+    .heroRole {
+      font-size: 3rem;
+    }
+
+    .heroTagline {
+      font-size: 1.6rem;
+    }
+  }
+
+  // image
+  .heroImage {
+    padding-left: 40px;
+  }
+}

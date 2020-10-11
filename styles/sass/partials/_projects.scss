@@ -1,0 +1,62 @@
+.projects {
+  background-color: rosybrown;
+}
+
+.projectItemRow {
+  display: flex;
+  flex: wrap;
+
+  .projectItemDisplay {
+    margin-right: 40px;
+    width: 55%;
+  }
+
+  .projectItemContent {
+    border: 1px solid green;
+    width: 40%;
+    line-height: 2.1rem;
+
+    .projectTools, 
+    .projectTitle,
+    .projectDescription,
+    .projectBtn {
+      padding-bottom: 20px;
+      font-family: $bodyFont;
+    }
+
+    .projectTools {
+      font-size: 3rem;
+      font-family: $bodyFont;
+    }
+
+    .projectTitle {
+      font-size: 2.6rem;
+      font-family: $headingFont;
+    }
+
+    .projectDescription {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+
+    .projectBtn {
+      width: 300px;
+      height: 300px;
+      display: inline;
+      border: 1px solid black;
+      padding: 10px;
+      background-color: teal;
+    }
+
+    .fa-github-alt {
+      margin-right: 5px;
+      font-size: 4rem;
+    }
+
+    .projectBtn,
+    .fa-github-alt {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+  }
+}

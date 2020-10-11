@@ -1,0 +1,46 @@
+.articles {
+  background-color: gray;
+}
+
+.singleArticle {
+  width: 360px;
+  margin-right: 30px;
+  min-height: 400px;
+  background-color: white;
+  // line-height: 1.6rem;
+
+  .articleContents {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    z-index: 2;
+  }
+
+  a {
+    color: black;
+    font-size: 2rem;
+    font-family: $bodyFont;
+    font-weight: 700;
+  }
+
+  p {
+    color: black;
+    font-size: 1.7rem;
+    font-family: $headingFont;
+    padding: 30px 0;
+  }
+
+  .readmoreBtn {
+    color: #22cd6f;
+  }
+
+  .fa-long-arrow-alt-right {
+    padding-right: 7px;
+  }
+}
+
+.articleCarousel {
+  display: flex;
+  flex-wrap: wrap;
+}
