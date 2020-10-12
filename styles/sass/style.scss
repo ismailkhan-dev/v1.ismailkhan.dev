@@ -8,10 +8,15 @@
 @import "./partials/projects";
 @import "./partials/articles";
 @import "./partials/contact";
+@import "./partials/buttons";
 
 // General
 html {
   font-size: 62.5%;
+}
+
+body {
+  background-color: $offBlack;
 }
 
 img {
@@ -51,56 +56,90 @@ i {
   margin: 0;
 }
 
+button {
+  outline: none;
+}
+
 // components
 .headingContainer {
+  width: 70%;
   display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-bottom: 50px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.textContainer {
+  position: relative;
+  z-index: 2;
+  // border: 1px solid red;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+strong {
+  text-transform: uppercase;
+  font-size: 9.5rem;
+  letter-spacing: -1px;
+  font-family: $bodyFont;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $darkPurple;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  z-index: -1;
 }
 
 small {
+  position: absolute;
+  top: 0;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
-  color: #08d665;
-  font-family: $headingFont;
+  color: $neonGreen;
+  font-family: $pairedFont;
 }
 
 .sectionHeading {
-  font-size: 3.3rem;
+  font-size: 6rem;
   font-family: $bodyFont;
-  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.sectionHeading,
+.headingTag {
+  color: $white;
 }
 
 .headingTag {
-  border: 1px solid red;
-  font-family: $bodyFont;
-  font-size: 1.6rem;
-  width: 20vw;
+  font-family: $fontD;
+  font-size: 3rem;
+  line-height: 1.5em;
+  width: 30vw;
   padding: 10px;
   padding-left: 20px;
-  border-left: 5px solid green;
+  border-left: 7px solid $neonGreen;
 }
 
 .divider {
   position: relative;
   height: 1px;
-  // margin: 6rem 0;
+  z-index: 20;
 }
 
 .divider::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 0;
   right: 0;
   width: 100%;
-  height: 6px;
+  height: 8px;
   background-image: linear-gradient(
     to right,
     transparent,
-    rgb(211, 9, 9),
+    $darkGreen,
     transparent
   );
 }

@@ -1,5 +1,9 @@
 .projects {
-  background-color: rosybrown;
+  // background-color: rosybrown;
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .projectItemRow {
@@ -16,7 +20,7 @@
     width: 40%;
     line-height: 2.1rem;
 
-    .projectTools, 
+    .projectTools,
     .projectTitle,
     .projectDescription,
     .projectBtn {
@@ -31,7 +35,7 @@
 
     .projectTitle {
       font-size: 2.6rem;
-      font-family: $headingFont;
+      font-family: $pairedFont;
     }
 
     .projectDescription {

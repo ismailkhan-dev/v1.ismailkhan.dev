@@ -2,12 +2,12 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
-  // margin: 0 auto;
-  min-height: 6vh;
+  min-height: 3vh;
   top: 0;
   z-index: 1030;
-  border-bottom: 1px solid red;
-  background-color: black;
+  border-bottom: .1rem solid $darkPurple;
+  // background-color: $offBlack;
+  background-image: linear-gradient(to right, $offBlack 0%, $darkPurple 100%);
   color: $neonGreen !important;
 
   .menuToggleContainer {
@@ -46,5 +46,16 @@ ul {
       text-transform: uppercase;
       padding: 30px 15px;
     }
+  }
+}
+
+.logo {
+  font-size: 4rem;
+  font-family: $bodyFont;
+  font-weight: 700;
+  
+
+  :hover {
+    transform: scale(1.2s);
   }
 }

@@ -1,36 +1,50 @@
 .skills {
-  background-color: gray;
-
+  clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 87%);
+  background: $darkPurple;
+  background-image: url(../assets/skills-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+    
   .sectionHeading {
     text-align: center;
+  }
+
+  .sectionHeading,
+  p {
+    color: $white;
   }
 }
 
 .centerContainer {
   height: 50vh;
-  max-width: 650px;
+  max-width: 700px;
+  width: 80%;
   margin: 0 auto;
 
-  .skillContainer {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid red;
-    // height: 100%;
-
-    .skillBox {
-      margin: 20px 10px;
-    }
-  }
-
-  .skillsImg {
-    height: 65px;
-    width: 65px;
-    margin: 5px 20px;
-  }
-
-  p {
-    font-family: $bodyFont;
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
     text-align: center;
-    font-size: 1.7rem;
+    padding: 10px;
+
+    .skill {
+      transition: all 0.3s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+      border: 3px solid $white;
+      padding: 10px;
+    }
+
+    img {
+      height: 9rem;
+    }
+
+    p {
+      padding-top: 10px;
+      font-family: $bodyFont;
+      font-size: 1.9rem;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }

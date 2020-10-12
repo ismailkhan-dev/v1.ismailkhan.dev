@@ -1,17 +1,18 @@
 .bio {
-  background-color: rosybrown;
+  background-color: $offBlack;
+  color: $white;
 
   .flexContainer {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1050px;
+    justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    
+
     p {
-      font-size: 2.3rem;
-      line-height: 2.4rem;
-      font-family: $bodyFont;
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      font-family: $pairedFont;
       padding-bottom: 10px;
     }
 
@@ -19,11 +20,31 @@
       margin-top: -0.15em;
     }
 
-  } 
-}
+    .bioContents {
+      border: 3px solid $darkPurple;
+      width: 66%;
+      padding: 25px;
+      background: $darkPurple;
+      border-radius: 13px;
+      box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
 
-.bioProfileImg {
-  padding-right: 50px;
-  height: 400px;
-  width: 400px;
+      .heroBtn {
+        margin-left: 0;
+      }
+    }
+
+    .profilePic {
+      max-height: 600px;
+      max-width: 400px;
+
+      img {
+        object-fit: contain;
+        height: 100%;
+
+        border: 5px solid $darkPurple;
+        border-radius: 25px;
+        box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Oswald:wght@400;500;700&family=Roboto+Slab:wght@400;700;900&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Roboto+Slab:wght@400;700;900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <!-- font awesome -->
@@ -30,7 +30,7 @@
     <title>PORTFOLIO PROJECT</title>
   </head>
   <body>
-    <!-- header (takes 100vh) -->
+    <!-- header -->
     <header>
       <div class="wrapper">
         <!-- fixed navbar -->
@@ -38,12 +38,11 @@
         <div class="menuToggleContainer">
           <div class="logoContainer">
             <img
-              src="./assets/curly-braces-logo.svg"
+              src="./assets/iconfinder-icon.svg"
               alt=""
               srcset=""
               class="logoImg"
             />
-            <p>{Ismail Khan}</p>
           </div>
 
           <!-- use stellarnav js plugin -->
@@ -75,26 +74,44 @@
     <section class="home">
       <div class="wrapper">
         <div class="heroContainer">
+          <!-- hero content -->
           <div class="heroContent">
-            <!-- h1: Ismail Khan  -->
-            <h1 class="heroTitle">Hello, I'm Ismail Khan 🚀</h1>
+            <h1 class="heroTitle">Ismail Khan 🚀</h1>
             <!-- I'm a Front-End Developer typed out animation -->
-            <h4 class="heroRole">Front-End Developer</h4>
+            <h4 class="heroRole">Front-End Developer.</h4>
             <p class="heroTagline">
               I'm a professional web developer with a passion for creating
               modern and robust web apps.
             </p>
+
+            <!-- hero links -->
+            <div class="linkContainer">
+              <div class="heroIcons">
+                <a
+                  href="https://github.com/ismailkhanio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="mailto:me@ismailkhan.io"
+                  ><i class="far fa-paper-plane"></i
+                ></a>
+              </div>
+              <div>
+                <a href="" class="btn heroBtn">My Resume</a>
+                <a href="#projects" class="btn heroBtn">My Projects</a>
+              </div>
+            </div>
           </div>
 
+          <!-- hero avatar -->
           <div class="heroImage">
             <div class="heroImgContainer">
-              <img src="./assets/hero-img-gif.gif" alt="" class="heroImgGif" />
+              <img src="./assets/hero-img.png" alt="" class="heroAvatar" />
             </div>
           </div>
         </div>
       </div>
-
-      <!-- indicator informing you can scroll down -->
     </section>
 
     <!-- bio section -->
@@ -102,139 +119,120 @@
       <div class="wrapper">
         <div class="flexContainer">
           <!-- bio (max 500 words) -->
-          <div>
+          <div class="bioContents">
             <h2 class="sectionHeading">About Me</h2>
-            <p>Front-End Developer</p>
             <p>
-              Hey, Ismail Khan here! I'm very passionate in building modern web
-              apps and utilizing best practices.
+              Hello world, Ismail here! I'm a Toronto-based front-end developer
+              🍁. I'm here on the internet to make modern web apps as incredible
+              as possible. I love to code and I love to learn to code. I'm a
+              developer, debugger, and technologist. I hike during the warm
+              seasons and always keep adding to my library where I pour over as
+              many pages a day as I'm able.
             </p>
             <p>
-              I'm a Juno College Web Dev Bootcamp graduate. I have a background
-              in accounting and finance, I hold a B.Comm in Business Management
-              from Ryerson University. I'm based out of Toronto, Canada.
+              I'm a front-end web development bootcamp graduate from Juno
+              College (formely known as HackerYou). I'm versed in responsive
+              design, web accessiblity (A11Y), and engineering back-end
+              technologies into the front-end.
             </p>
             <p>
-              Did I mention I love to code? I also love to hike during the
-              off-winter seasons and immerse myself in many many books.
+              I come from a background in accounting where I hold a Bachelor of
+              Commerce in Business Management from Ryerson University. I had a
+              previous tenure as an accountant before finding web development.
+              From the critical thinking and analytical mindset I developed as
+              an accountant, I'm always able to find innovative ways to solve
+              complex problems. Finding web development now allows me to further
+              this mindset while also following my passion in building rich web
+              applications!
             </p>
             <div>
-              <button>Download CV</button>
-              <button>Get in Touch</button>
+              <a href="#contact" class="btn heroBtn">Get in Touch!</a>
             </div>
           </div>
 
-          <!-- photo -->
-          <img src="/assets/profile-pic.png" alt="" class="bioProfileImg" />
+          <div class="profilePic">
+            <!-- profile picture -->
+            <img src="/assets/profile-pic3.jpg" alt="" />
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- horizontal line divider -->
+    <div class="divider"></div>
 
     <!-- skills section  -->
     <section class="skills">
       <div class="wrapper">
         <h2 class="sectionHeading">Toolkit</h2>
         <div class="centerContainer">
-          <div class="skillContainer">
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/html5.svg"
-                alt=""
-                class="skillsImg"
-              />
+          <div class="gridContainer">
+            <div class="skill">
+              <img src="./assets/skills-icons/html5.svg" alt="" />
               <p>HTML5</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/css3.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/css3.svg" alt="" />
               <p>CSS3</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/javascript.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/javascript.svg" alt="" />
               <p>JavaScript</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/jquery.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/jquery.svg" alt="" />
               <p>jQuery</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/react.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/react.svg" alt="" />
               <p>React.js</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/sass.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/sass.svg" alt="" />
               <p>Sass</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/firebase.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/firebase.svg" alt="" />
               <p>Firebase</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/git.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/git.svg" alt="" />
               <p>Git</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/nodejs.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/nodejs.svg" alt="" />
               <p>Node.js</p>
             </div>
-            <div class="skillBox">
-              <img
-                src="./assets/skills-icons/mongodb.svg"
-                alt=""
-                class="skillsImg"
-              />
+            <div class="skill">
+              <img src="./assets/skills-icons/mongodb.svg" alt="" />
               <p>MonogDB</p>
+            </div>
+            <div class="skill">
+              <img src="./assets/skills-icons/bootstrap.svg" alt="" />
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+              <img src="./assets/skills-icons/expressjs.svg" alt="" />
+              <p>Express.js</p>
             </div>
           </div>
         </div>
       </div>
-      <!-- skills table can easily allow more skills to be added on -->
-      <!-- use coloured high rendered icons -->
     </section>
 
-    <!-- horizontal line divider -->
-    <div class="divider"></div>
-
     <!-- projects section -->
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="wrapper">
+        <!-- heading text -->
         <div class="headingContainer">
-          <small>Highlighted</small>
-          <h2 class="sectionHeading">Projects</h2>
-          <p class="headingTag">
-            View work I've done using React, Firebase, ES6, and much more!
-          </p>
+          <div class="textContainer">
+            <strong>Projects</strong>
+            <div class="displayText">
+              <small>Highlighted</small>
+              <h2 class="sectionHeading">Projects</h2>
+            </div>
+          </div>
+          <p class="headingTag">An inexhaustive list of coding projects.</p>
         </div>
 
         <!-- project 01 -->
@@ -282,10 +280,13 @@
       <div class="wrapper">
         <!-- heading text -->
         <div class="headingContainer">
-          <small>Recent</small>
-          <h2 class="sectionHeading">Articles</h2>
+          <div class="textContainer">
+            <strong>Articles</strong>
+            <small>Recent</small>
+            <h2 class="sectionHeading">Articles</h2>
+          </div>
           <p class="headingTag">
-            View my writing on coding, internet, and technology all on Medium!
+            Articles on coding and technology all on Medium!
           </p>
         </div>
 
@@ -330,13 +331,25 @@
         </div>
       </div>
     </section>
-    <!-- something that shows the title of my blogs but links to medium -->
 
     <!-- contact section -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="wrapper">
-        <h2 class="sectionHeading">Contact</h2>
+        <!-- heading text -->
+        <div class="headingContainer">
+          <div class="textContainer">
+            <strong>Contact</strong>
+            <small>Find Me!</small>
+            <h2 class="sectionHeading">Contact</h2>
+          </div>
+          <div class="headingTag">
+            Let's get in touch and chat coding and technology.
+          </div>
+        </div>
+
+        <!-- form -->
         <div class="flexContainer">
+          <!-- form content -->
           <div class="formContent">
             <p>Let's get in touch and chat about technology.</p>
             <p>
@@ -344,7 +357,7 @@
               <a href="mailto:me@ismailkhan.io">me@ismailkhan.io</a>
             </p>
             <!-- social media links -->
-            <div>
+            <div class="linkContainer">
               <!-- Linkedin -->
               <i class="fab fa-linkedin"></i>
               <!-- Github -->
@@ -358,6 +371,8 @@
             </div>
             <!-- link for resume -->
           </div>
+
+          <!-- actual form -->
           <div class="formContainer">
             <form
               id="fc-frm"
@@ -398,7 +413,7 @@
                   value="Contact Form Submission"
                 />
               </fieldset>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" class="btn heroBtn" />
             </form>
           </div>
         </div>
