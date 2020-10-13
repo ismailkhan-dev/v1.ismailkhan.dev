@@ -1,23 +1,26 @@
-.projects {
-  // background-color: rosybrown;
-  .headerContainer {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .projectItemRow {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   flex: wrap;
+  border: 1px solid red;
 
   .projectItemDisplay {
+    width: 45%;
+    // max-width: ???
     margin-right: 40px;
-    width: 55%;
+    border: 1px solid red;
   }
 
   .projectItemContent {
+    width: 50%;
+    // max-width: ???
+
+    padding: 15px;
+
+    background-color: $darkPurple;
+    color: $white;
     border: 1px solid green;
-    width: 40%;
     line-height: 2.1rem;
 
     .projectTools,
@@ -35,12 +38,13 @@
 
     .projectTitle {
       font-size: 2.6rem;
-      font-family: $pairedFont;
+      // font-family: $pairedFont;
     }
 
     .projectDescription {
       font-size: 2.4rem;
       line-height: 3rem;
+      font-family: $pairedFont;
     }
 
     .projectBtn {

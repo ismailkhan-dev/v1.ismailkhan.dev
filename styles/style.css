@@ -264,10 +264,24 @@ header .menuToggleContainer {
   margin: 0.5rem 6rem;
 }
 
-header .menuToggleContainer .logoImg,
 header .menuToggleContainer .menuToggle {
   height: 50px;
   width: 50px;
+}
+
+header .menuToggleContainer .siteLogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+header .menuToggleContainer .siteLogo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 header .menuToggleContainer .menuBar {
@@ -282,30 +296,26 @@ ul {
   padding: 15px 0 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-weight: 700;
+  height: 100%;
 }
 
 ul li {
-  display: inline-block;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul li a {
   font-family: "Fira Code", monospace;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
-  padding: 30px 15px;
-}
-
-.logo {
-  font-size: 4rem;
-  font-family: "Fira Code", monospace;
-  font-weight: 700;
-}
-
-.logo :hover {
-  -webkit-transform: scale(1.2s);
-          transform: scale(1.2s);
+  padding: 0 15px;
 }
 
 footer {
@@ -433,6 +443,7 @@ footer span {
 .bio {
   background-color: #2a2d34;
   color: #ebebeb;
+  margin-bottom: 50px;
 }
 
 .bio .flexContainer {
@@ -443,32 +454,32 @@ footer span {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   margin: 0 auto;
-}
-
-.bio .flexContainer p {
-  font-size: 2.2rem;
-  line-height: 2.7rem;
-  font-family: "Roboto Slab", serif;
-  padding-bottom: 10px;
-}
-
-.bio .flexContainer p:first-child {
-  margin-top: -0.15em;
 }
 
 .bio .flexContainer .bioContents {
   border: 3px solid #171117;
   width: 66%;
-  padding: 25px;
+  height: 100%;
+  padding: 30px;
   background: #171117;
   border-radius: 13px;
   -webkit-box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
           box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
+}
+
+.bio .flexContainer .bioContents .sectionHeading {
+  margin-bottom: 15px;
+}
+
+.bio .flexContainer .bioContents p {
+  font-size: 1.9rem;
+  line-height: 3.3rem;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 15px;
 }
 
 .bio .flexContainer .bioContents .heroBtn {
@@ -478,11 +489,14 @@ footer span {
 .bio .flexContainer .profilePic {
   max-height: 600px;
   max-width: 400px;
+  height: 500px;
 }
 
 .bio .flexContainer .profilePic img {
   -o-object-fit: contain;
      object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
   height: 100%;
   border: 5px solid #171117;
   border-radius: 25px;
@@ -499,10 +513,12 @@ footer span {
   background-size: cover;
   background-position: top;
   width: 100%;
+  height: 100%;
 }
 
 .skills .sectionHeading {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .skills .sectionHeading,
@@ -511,7 +527,6 @@ footer span {
 }
 
 .centerContainer {
-  height: 50vh;
   max-width: 700px;
   width: 80%;
   margin: 0 auto;
@@ -546,33 +561,32 @@ footer span {
   transition: all 0.3s ease-in-out;
 }
 
-.projects .headerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .projectItemRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   -webkit-box-flex: wrap;
       -ms-flex: wrap;
           flex: wrap;
+  border: 1px solid red;
 }
 
 .projectItemRow .projectItemDisplay {
+  width: 45%;
   margin-right: 40px;
-  width: 55%;
+  border: 1px solid red;
 }
 
 .projectItemRow .projectItemContent {
+  width: 50%;
+  padding: 15px;
+  background-color: #171117;
+  color: #ebebeb;
   border: 1px solid green;
-  width: 40%;
   line-height: 2.1rem;
 }
 
@@ -591,12 +605,12 @@ footer span {
 
 .projectItemRow .projectItemContent .projectTitle {
   font-size: 2.6rem;
-  font-family: "Roboto Slab", serif;
 }
 
 .projectItemRow .projectItemContent .projectDescription {
   font-size: 2.4rem;
   line-height: 3rem;
+  font-family: "Roboto Slab", serif;
 }
 
 .projectItemRow .projectItemContent .projectBtn {
@@ -669,7 +683,7 @@ footer span {
   font-family: "Roboto Slab", serif;
 }
 
-.flexContainer {
+.contact .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,36 +697,36 @@ footer span {
   padding: 20px;
 }
 
-.flexContainer .formContent {
+.contact .flexContainer .formContent {
   width: 50%;
   height: 100%;
   font-size: 3rem;
 }
 
-.flexContainer .formContent p:first-of-type {
+.contact .flexContainer .formContent p:first-of-type {
   padding-bottom: 30px;
 }
 
-.flexContainer .formContent .fa-paper-plane {
+.contact .flexContainer .formContent .fa-paper-plane {
   padding-right: 7px;
 }
 
-.flexContainer .formContent a {
+.contact .flexContainer .formContent a {
   text-decoration: underline;
   color: #0d6328;
 }
 
-.flexContainer .linkContainer {
+.contact .flexContainer .linkContainer {
   margin-top: 50px;
   font-size: 5.6rem;
 }
 
-.flexContainer .linkContainer .fab,
-.flexContainer .linkContainer .far {
+.contact .flexContainer .linkContainer .fab,
+.contact .flexContainer .linkContainer .far {
   padding: 10px 10px;
 }
 
-.flexContainer .linkContainer .fab:first-of-type {
+.contact .flexContainer .linkContainer .fab:first-of-type {
   padding-left: 0;
 }
 
@@ -809,8 +823,9 @@ img {
 
 section {
   width: 100%;
-  height: 100vh;
-  padding: 8rem 0;
+  min-height: 100vh;
+  height: 100%;
+  padding: 100px 0;
 }
 
 .wrapper {
@@ -834,7 +849,10 @@ h3,
 h4,
 a,
 p,
-i {
+i,
+ul,
+li,
+nav {
   padding: 0;
   margin: 0;
 }
@@ -851,7 +869,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .textContainer {

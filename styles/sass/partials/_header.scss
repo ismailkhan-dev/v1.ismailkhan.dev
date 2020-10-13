@@ -5,8 +5,7 @@ header {
   min-height: 3vh;
   top: 0;
   z-index: 1030;
-  border-bottom: .1rem solid $darkPurple;
-  // background-color: $offBlack;
+  border-bottom: 0.1rem solid $darkPurple;
   background-image: linear-gradient(to right, $offBlack 0%, $darkPurple 100%);
   color: $neonGreen !important;
 
@@ -16,10 +15,20 @@ header {
     justify-content: space-between;
     margin: 0.5rem 6rem;
 
-    .logoImg,
     .menuToggle {
       height: 50px;
       width: 50px;
+    }
+
+    .siteLogo {
+      height: 50px;
+      width: 50px;
+      border-radius: 10px;
+      transition: transform .2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .menuBar {
@@ -29,33 +38,22 @@ header {
   }
 }
 
-
 ul {
   display: flex;
   padding: 15px 0 20px;
   justify-content: space-around;
+  align-content: center;
   font-weight: 700;
+  height: 100%;
 
   li {
-    display: inline-block;
-    position: relative;
-
+    display: flex;
+    align-items: center;
     a {
       font-family: $bodyFont;
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       text-transform: uppercase;
-      padding: 30px 15px;
+      padding: 0 15px;
     }
-  }
-}
-
-.logo {
-  font-size: 4rem;
-  font-family: $bodyFont;
-  font-weight: 700;
-  
-
-  :hover {
-    transform: scale(1.2s);
   }
 }

@@ -8,44 +8,44 @@
 
   color: $white;
   font-family: $pairedFont;
-}
 
-.flexContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 
-  .formContent {
-    width: 50%;
-    height: 100%;
-    font-size: 3rem;
+    .formContent {
+      width: 50%;
+      height: 100%;
+      font-size: 3rem;
 
-    p:first-of-type {
-      padding-bottom: 30px;
+      p:first-of-type {
+        padding-bottom: 30px;
+      }
+
+      .fa-paper-plane {
+        padding-right: 7px;
+      }
+
+      a {
+        text-decoration: underline;
+        color: $darkGreen;
+      }
     }
 
-    .fa-paper-plane {
-      padding-right: 7px;
-    }
+    .linkContainer {
+      margin-top: 50px;
+      font-size: 5.6rem;
 
-    a {
-      text-decoration: underline;
-      color: $darkGreen;
-    }
-  }
+      .fab,
+      .far {
+        padding: 10px 10px;
+      }
 
-  .linkContainer {
-    margin-top: 50px;
-    font-size: 5.6rem;
-
-    .fab,
-    .far {
-      padding: 10px 10px;
-    }
-
-    .fab:first-of-type {
-      padding-left: 0;
+      .fab:first-of-type {
+        padding-left: 0;
+      }
     }
   }
 }
@@ -72,7 +72,7 @@
     padding: 15px;
 
     &::placeholder {
-      font-family: $pairedFont
+      font-family: $pairedFont;
     }
   }
 }
