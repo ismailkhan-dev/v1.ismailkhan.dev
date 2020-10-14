@@ -1,15 +1,16 @@
+.projects {
+}
+
 .projectItemRow {
   display: flex;
   justify-content: space-between;
   width: 100%;
   flex: wrap;
-  border: 1px solid red;
 
   .projectItemDisplay {
     width: 45%;
     // max-width: ???
     margin-right: 40px;
-    border: 1px solid red;
   }
 
   .projectItemContent {
@@ -20,51 +21,43 @@
 
     background-color: $darkPurple;
     color: $white;
-    border: 1px solid green;
     line-height: 2.1rem;
 
-    .projectTools,
-    .projectTitle,
-    .projectDescription,
-    .projectBtn {
-      padding-bottom: 20px;
+    .projectTitle {
+      font-size: 2.8rem;
       font-family: $bodyFont;
+      padding: 10px 0;
     }
 
     .projectTools {
-      font-size: 3rem;
+      font-size: 1.5rem;
       font-family: $bodyFont;
-    }
+      width: 100%;
+      text-align: left;
+      padding: 25px 0;
 
-    .projectTitle {
-      font-size: 2.6rem;
-      // font-family: $pairedFont;
+      .toolUsed {
+        background-color: $darkGreen;
+        border: 2px solid $white;
+        border-radius: 15px;
+        padding: 7px;
+        margin-right: 10px;
+        font-weight: 500;
+      }
     }
 
     .projectDescription {
-      font-size: 2.4rem;
-      line-height: 3rem;
+      font-size: 2rem;
+      line-height: 3.1rem;
       font-family: $pairedFont;
+      padding: 10px 0 20px 0;
     }
 
-    .projectBtn {
-      width: 300px;
-      height: 300px;
-      display: inline;
-      border: 1px solid black;
-      padding: 10px;
-      background-color: teal;
-    }
-
-    .fa-github-alt {
-      margin-right: 5px;
-      font-size: 4rem;
-    }
-
-    .projectBtn,
-    .fa-github-alt {
-      font-size: 2.5rem;
-      text-transform: uppercase;
+    .heroBtn {
+      font-size: 2rem;
+      .fa-github-alt {
+        margin-right: 10px;
+      }
     }
   }
 }

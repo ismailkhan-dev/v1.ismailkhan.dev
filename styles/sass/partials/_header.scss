@@ -20,40 +20,41 @@ header {
       width: 50px;
     }
 
-    .siteLogo {
-      height: 50px;
-      width: 50px;
-      border-radius: 10px;
-      transition: transform .2s;
-
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
     .menuBar {
       width: 45px;
       height: 45px;
     }
   }
-}
 
-ul {
-  display: flex;
-  padding: 15px 0 20px;
-  justify-content: space-around;
-  align-content: center;
-  font-weight: 700;
-  height: 100%;
-
-  li {
+  ul {
     display: flex;
-    align-items: center;
-    a {
-      font-family: $bodyFont;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      padding: 0 15px;
+    padding: 15px 0 10px 20px;
+    justify-content: space-around;
+    align-content: center;
+    font-weight: 700;
+    height: 100%;
+
+    li {
+      display: flex;
+      align-items: center;
+      a {
+        font-family: $bodyFont;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        padding: 0 15px;
+      }
     }
   }
+
 }
+
+.siteLogo {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }

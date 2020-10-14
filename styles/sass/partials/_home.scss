@@ -47,18 +47,15 @@
     .heroRole {
       font-size: 3rem;
       font-family: $bodyFont;
-      padding-bottom: 50px;
     }
 
     .heroTagline {
-      font-size: 2rem;
+      font-size: 2.7rem;
       font-family: $pairedFont;
-      border-left: 5px solid $neonGreen;
+      border-left: 10px solid $neonGreen;
       padding-left: 15px;
       line-height: 2.9rem;
-      margin-bottom: 50px;
-
-      
+      margin: 50px 0;
     }
 
     // links
@@ -66,6 +63,15 @@
     .far {
       font-size: 4rem;
       padding: 5px;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.2);
+        color: $neonGreen;
+      }
+    }
+
+    .heroBtn {
+      height: 45px;
     }
   }
 
@@ -77,22 +83,15 @@
   }
 
   .linkContainer {
-    display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    padding-bottom: 20px;
 
-    padding-top: 20px;
-  }
-
-  .heroIcons {
     a {
       padding: 0 10px;
-    }
-  }
 
-  .fa-github:hover,
-  .fa-paper-plane:hover {
-    transform: scale(1.2);
-    transition: all .2s;
+      &:first-of-type {
+        padding-left: 0;
+      }
+    }
   }
 }

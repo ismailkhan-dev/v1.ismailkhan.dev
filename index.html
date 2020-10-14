@@ -27,7 +27,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <title>PORTFOLIO PROJECT</title>
+    <title>Ismail Khan | Developer</title>
   </head>
   <body>
     <!-- header -->
@@ -37,12 +37,13 @@
         <!-- logo to the leftmost side -->
         <div class="menuToggleContainer">
           <div class="logoContainer">
-            <img
-              src="./assets/siteLogo.png"
-              alt=""
-              srcset=""
-              class="siteLogo"
-            />
+            <a href="#home"
+              ><img
+                src="./assets/siteLogo.png"
+                alt=""
+                srcset=""
+                class="siteLogo"
+            /></a>
           </div>
 
           <!-- use stellarnav js plugin -->
@@ -71,14 +72,14 @@
     </header>
 
     <!-- home section -->
-    <section class="home">
+    <section id="home" class="home">
       <div class="wrapper">
         <div class="heroContainer">
           <!-- hero content -->
           <div class="heroContent">
             <h1 class="heroTitle">Ismail Khan 🚀</h1>
             <!-- I'm a Front-End Developer typed out animation -->
-            <h4 class="heroRole">Front-End Developer.</h4>
+            <h4 class="heroRole">Front-End Developer</h4>
             <p class="heroTagline">
               I'm a professional web developer with a passion for creating
               modern and robust web apps.
@@ -87,21 +88,60 @@
             <!-- hero links -->
             <div class="linkContainer">
               <div class="heroIcons">
+                <!-- Github -->
                 <a
                   href="https://github.com/ismailkhanio"
                   target="_blank"
                   rel="noopener noreferrer"
                   ><i class="fab fa-github"></i
                 ></a>
+                <!-- Linkedin -->
+                <a
+                  href="https://www.linkedin.com/in/ismailkhanio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <!-- Twitter -->
+                <a
+                  href="https://twitter.com/ismailkhanio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <!-- Medium -->
+                <a
+                  href="https://medium.com/@ismail.khan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-medium"></i
+                ></a>
+                <!-- Codepen -->
+                <a
+                  href="https://codepen.io/ismailkn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-codepen"></i
+                ></a>
+                <!-- Dev.to -->
+                <a
+                  href="https://dev.to/ismailkhanio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-dev"></i
+                ></a>
+                <!-- Email -->
                 <a href="mailto:me@ismailkhan.io"
                   ><i class="far fa-paper-plane"></i
                 ></a>
               </div>
-              <div>
-                <a href="" class="btn heroBtn">My Resume</a>
-                <a href="#projects" class="btn heroBtn">My Projects</a>
-              </div>
             </div>
+            <a
+              href="./assets/ismail-khan-resume.pdf"
+              target="_blank"
+              class="btn heroBtn"
+              >Download My Resume</a
+            >
           </div>
 
           <!-- hero avatar -->
@@ -126,7 +166,9 @@
               <h2 class="sectionHeading">About</h2>
             </div>
           </div>
-          <p class="headingTag">Learn more about me!</p>
+          <p class="headingTag">
+            This is where I tell you things about myself. Learn more about me!
+          </p>
         </div>
 
         <!-- bio -->
@@ -248,16 +290,21 @@
           </div>
 
           <div class="projectItemContent">
-            <!-- tools used -->
-            <p class="projectTools">React - Firebase - JSX - REST API</p>
             <!-- project title -->
-            <h2 class="projectTitle">Giphy Sentiment App</h2>
+            <h2 class="projectTitle">Giphy Sentiment & Emotions React App</h2>
+            <!-- tools used -->
+            <p class="projectTools">
+              <span class="toolUsed">React</span
+              ><span class="toolUsed">Firebase</span
+              ><span class="toolUsed">JSX</span
+              ><span class="toolUsed">REST API</span>
+            </p>
             <!-- short description -->
             <p class="projectDescription">
               This React app, built with mob programming, provides a interactive
               and fun way to caputre and represent people's emotional state
               using gifs! A neat timeline is featured that allows a user to view
-              the changes in the emotional state of people throughout the year.
+              the changes in the emotional state of users throughout the year.
             </p>
             <!-- live site and repo links -->
             <div>
@@ -266,7 +313,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn heroBtn"
-                >Live Site</a
+                >Live Demo</a
               >
               <a
                 href="http://https://github.com/ismailkhanio"
@@ -295,51 +342,103 @@
             Articles on coding and technology all on Medium!
           </p>
         </div>
-
-        <!-- article carousel -->
-        <div class="articleCarousel">
-          <div class="singleArticle">
-            <div class="articleContents">
-              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
-                >From Accounting to a Front-End Web Development Boot Camp, A
-                Short Career Change Story.</a
-              >
-              <p>July 20, 2020</p>
-              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
-                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
-              >
-            </div>
-          </div>
-          <div class="singleArticle">
-            <div class="articleContents">
-              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
-                >From Accounting to a Front-End Web Development Boot Camp, A
-                Short Career Change Story.</a
-              >
-              <p>July 20, 2020</p>
-              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
-                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
-              >
-            </div>
-          </div>
-          <div class="singleArticle">
-            <div class="articleContents">
-              <a href="https://link.medium.com/Ee9ZR778tab" target="_blank"
-                >From Accounting to a Front-End Web Development Boot Camp, A
-                Short Career Change Story.</a
-              >
-              <p>July 20, 2020</p>
-              <a href="https://link.medium.com/Ee9ZR778tab" class="readmoreBtn"
-                ><i class="fas fa-long-arrow-alt-right"></i>Read More</a
-              >
-            </div>
-          </div>
-        </div>
+        <p class="moreArticles">
+          Don't fret, more articles are on their way soon!
+        </p>
+      </div>
+      <!-- article list -->
+      <div class="articleHome">
+        <ul class="articleList">
+          <li class="articlePreview">
+            <div class="divider"></div>
+            <!-- centered card that redirects to medium -->
+            <a href="https://link.medium.com/Ee9ZR778tab" target="_blank">
+              <h2 class="articleTitle">
+                From an Accountant to Web Developer; A Short Career Story.<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </h2>
+              <p class="articleData">Published on August 24, 2020</p>
+              <p class="articleSubText">
+                This article is my professional story from accounting to web
+                development.
+              </p>
+            </a>
+            <div class="divider"></div>
+          </li>
+          <li class="articlePreview">
+            <!-- centered card that redirects to medium -->
+            <a href="https://link.medium.com/Ee9ZR778tab" target="_blank">
+              <h2 class="articleTitle">
+                From an Accountant to Web Developer; A Short Career Story.<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </h2>
+              <p class="articleData">Published on August 24, 2020</p>
+              <p class="articleSubText">
+                This article is my professional story from accounting to web
+                development.
+              </p>
+            </a>
+            <div class="divider"></div>
+          </li>
+          <li class="articlePreview">
+            <!-- centered card that redirects to medium -->
+            <a href="https://link.medium.com/Ee9ZR778tab" target="_blank">
+              <h2 class="articleTitle">
+                From an Accountant to Web Developer; A Short Career Story.<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </h2>
+              <p class="articleData">Published on August 24, 2020</p>
+              <p class="articleSubText">
+                This article is my professional story from accounting to web
+                development.
+              </p>
+            </a>
+            <div class="divider"></div>
+          </li>
+          <li class="articlePreview">
+            <!-- centered card that redirects to medium -->
+            <a href="https://link.medium.com/Ee9ZR778tab" target="_blank">
+              <h2 class="articleTitle">
+                From an Accountant to Web Developer; A Short Career Story.<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </h2>
+              <p class="articleData">Published on August 24, 2020</p>
+              <p class="articleSubText">
+                This article is my professional story from accounting to web
+                development.
+              </p>
+            </a>
+            <div class="divider"></div>
+          </li>
+          <li class="articlePreview">
+            <!-- centered card that redirects to medium -->
+            <a href="https://link.medium.com/Ee9ZR778tab" target="_blank">
+              <h2 class="articleTitle">
+                From an Accountant to Web Developer; A Short Career Story.<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </h2>
+              <p class="articleData">Published on August 24, 2020</p>
+              <p class="articleSubText">
+                This article is my professional story from accounting to web
+                development.
+              </p>
+            </a>
+            <div class="divider"></div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- contact section -->
     <section id="contact" class="contact">
+      <div class="clipOverlay">
+        <!-- css -->
+      </div>
       <div class="wrapper">
         <!-- heading text -->
         <div class="headingContainer">
@@ -349,7 +448,7 @@
             <h2 class="sectionHeading">Contact</h2>
           </div>
           <div class="headingTag">
-            Let's get in touch and chat coding and technology.
+            Let's get in touch and talk coding and technology.
           </div>
         </div>
 
@@ -357,25 +456,70 @@
         <div class="flexContainer">
           <!-- form content -->
           <div class="formContent">
-            <p>Let's get in touch and chat about technology.</p>
+            <p>Hey wow, you made it this far! 😃</p>
             <p>
-              <i class="far fa-paper-plane"></i>Email:
+              Feel free to get in touch below or through the contact form. I'm
+              ready for a chat whenever you are. I'm always up for making new
+              connections.
+            </p>
+            <p>
+              Looking for my resume? You can download the most update version
+              <a
+                href="./assets/ismail-khan-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >.
+            </p>
+            <p>
+              Email:
               <a href="mailto:me@ismailkhan.io">me@ismailkhan.io</a>
             </p>
             <!-- social media links -->
             <div class="linkContainer">
-              <!-- Linkedin -->
-              <i class="fab fa-linkedin"></i>
               <!-- Github -->
-              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/ismailkhanio"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-github"></i
+              ></a>
+              <!-- Linkedin -->
+              <a
+                href="https://www.linkedin.com/in/ismailkhanio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-linkedin"></i
+              ></a>
               <!-- Twitter -->
-              <i class="fab fa-twitter"></i>
+              <a
+                href="https://twitter.com/ismailkhanio"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-twitter"></i
+              ></a>
               <!-- Medium -->
-              <i class="fab fa-medium"></i>
-              <!-- Email -->
-              <i class="far fa-paper-plane"></i>
+              <a
+                href="https://medium.com/@ismail.khan"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-medium"></i
+              ></a>
+              <!-- Codepen -->
+              <a
+                href="https://codepen.io/ismailkn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-codepen"></i
+              ></a>
+              <!-- Dev.to -->
+              <a
+                href="https://dev.to/ismailkhanio"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fab fa-dev"></i
+              ></a>
             </div>
-            <!-- link for resume -->
           </div>
 
           <!-- actual form -->
@@ -393,7 +537,7 @@
                   type="text"
                   name="name"
                   id="fullName"
-                  placeholder="Enter your name here..."
+                  placeholder="Name"
                   required=""
                 />
                 <label for="emailAddress">Email Address</label>
@@ -401,7 +545,7 @@
                   type="email"
                   name="_replyto"
                   id="emailAddress"
-                  placeholder="email@domain.tld"
+                  placeholder="Email"
                   required=""
                 />
                 <label for="message">Message</label>
@@ -411,6 +555,7 @@
                   id="message"
                   placeholder="Enter your message here!"
                   required=""
+                  maxlength="900"
                 ></textarea>
                 <input
                   type="hidden"
@@ -428,8 +573,14 @@
 
     <!-- footer -->
     <footer>
+      <!-- logo -->
+      <a href="#home"
+        ><img src="./assets/siteLogo.png" alt="" srcset="" class="siteLogo"
+      /></a>
+
       <!-- my name and copyright -->
-      <p>Copyright © 2020 by <span>Ismail Khan</span> All Rights Reserved</p>
+      <p>Designed & Developed by <span>Ismail Khan</span></p>
+      <p>Copyright © 2020</p>
     </footer>
   </body>
   <!-- js script -->

@@ -269,31 +269,16 @@ header .menuToggleContainer .menuToggle {
   width: 50px;
 }
 
-header .menuToggleContainer .siteLogo {
-  height: 50px;
-  width: 50px;
-  border-radius: 10px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-header .menuToggleContainer .siteLogo:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 header .menuToggleContainer .menuBar {
   width: 45px;
   height: 45px;
 }
 
-ul {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 0 20px;
+  padding: 15px 0 10px 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-line-pack: center;
@@ -302,7 +287,7 @@ ul {
   height: 100%;
 }
 
-ul li {
+header ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,19 +296,39 @@ ul li {
           align-items: center;
 }
 
-ul li a {
+header ul li a {
   font-family: "Fira Code", monospace;
   font-size: 1.8rem;
   text-transform: uppercase;
   padding: 0 15px;
 }
 
+.siteLogo {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.siteLogo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 footer {
-  height: 40vh;
-  background-color: black;
+  min-height: 19vh;
+  height: 100%;
+  background-color: #171117;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -334,12 +339,32 @@ footer {
 }
 
 footer p {
-  font-size: 3rem;
-  color: white;
+  font-size: 2rem;
+  color: #ebebeb;
+  padding: 10px 0;
+}
+
+footer p:nth-of-type(2) {
+  font-size: 1.7rem;
+  padding-top: 0;
 }
 
 footer span {
-  color: green;
+  color: #0d6328;
+  font-weight: 700;
+}
+
+footer .siteLogo {
+  height: 75px;
+  width: 75px;
+  margin-bottom: 12px;
+}
+
+footer .siteLogo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0 1px 1px -1px inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 1px -1px inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 .home {
@@ -393,22 +418,34 @@ footer span {
 .heroContainer .heroContent .heroRole {
   font-size: 3rem;
   font-family: "Fira Code", monospace;
-  padding-bottom: 50px;
 }
 
 .heroContainer .heroContent .heroTagline {
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-family: "Roboto Slab", serif;
-  border-left: 5px solid #08d665;
+  border-left: 10px solid #08d665;
   padding-left: 15px;
   line-height: 2.9rem;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .heroContainer .heroContent .fab,
 .heroContainer .heroContent .far {
   font-size: 4rem;
   padding: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.heroContainer .heroContent .fab:hover,
+.heroContainer .heroContent .far:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #08d665;
+}
+
+.heroContainer .heroContent .heroBtn {
+  height: 45px;
 }
 
 .heroContainer .heroImage {
@@ -418,26 +455,16 @@ footer span {
 }
 
 .heroContainer .linkContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.heroContainer .heroIcons a {
+.heroContainer .linkContainer a {
   padding: 0 10px;
 }
 
-.heroContainer .fa-github:hover,
-.heroContainer .fa-paper-plane:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+.heroContainer .linkContainer a:first-of-type {
+  padding-left: 0;
 }
 
 .bio {
@@ -476,14 +503,10 @@ footer span {
 }
 
 .bio .flexContainer .bioContents p {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   line-height: 3.3rem;
   font-family: "Roboto Slab", serif;
   padding-bottom: 15px;
-}
-
-.bio .flexContainer .bioContents .heroBtn {
-  margin-left: 0;
 }
 
 .bio .flexContainer .profilePic {
@@ -505,8 +528,6 @@ footer span {
 }
 
 .skills {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 87%);
-          clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 87%);
   background: #171117;
   background-image: url(../assets/skills-bg.png);
   background-repeat: no-repeat;
@@ -572,13 +593,11 @@ footer span {
   -webkit-box-flex: wrap;
       -ms-flex: wrap;
           flex: wrap;
-  border: 1px solid red;
 }
 
 .projectItemRow .projectItemDisplay {
   width: 45%;
   margin-right: 40px;
-  border: 1px solid red;
 }
 
 .projectItemRow .projectItemContent {
@@ -586,101 +605,148 @@ footer span {
   padding: 15px;
   background-color: #171117;
   color: #ebebeb;
-  border: 1px solid green;
   line-height: 2.1rem;
 }
 
-.projectItemRow .projectItemContent .projectTools,
-.projectItemRow .projectItemContent .projectTitle,
-.projectItemRow .projectItemContent .projectDescription,
-.projectItemRow .projectItemContent .projectBtn {
-  padding-bottom: 20px;
+.projectItemRow .projectItemContent .projectTitle {
+  font-size: 2.8rem;
   font-family: "Fira Code", monospace;
+  padding: 10px 0;
 }
 
 .projectItemRow .projectItemContent .projectTools {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-family: "Fira Code", monospace;
+  width: 100%;
+  text-align: left;
+  padding: 25px 0;
 }
 
-.projectItemRow .projectItemContent .projectTitle {
-  font-size: 2.6rem;
+.projectItemRow .projectItemContent .projectTools .toolUsed {
+  background-color: #0d6328;
+  border: 2px solid #ebebeb;
+  border-radius: 15px;
+  padding: 7px;
+  margin-right: 10px;
+  font-weight: 500;
 }
 
 .projectItemRow .projectItemContent .projectDescription {
-  font-size: 2.4rem;
-  line-height: 3rem;
-  font-family: "Roboto Slab", serif;
-}
-
-.projectItemRow .projectItemContent .projectBtn {
-  width: 300px;
-  height: 300px;
-  display: inline;
-  border: 1px solid black;
-  padding: 10px;
-  background-color: teal;
-}
-
-.projectItemRow .projectItemContent .fa-github-alt {
-  margin-right: 5px;
-  font-size: 4rem;
-}
-
-.projectItemRow .projectItemContent .projectBtn,
-.projectItemRow .projectItemContent .fa-github-alt {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
-
-.singleArticle {
-  width: 360px;
-  margin-right: 30px;
-  min-height: 400px;
-  background-color: white;
-}
-
-.singleArticle .articleContents {
-  background-color: white;
-  padding: 30px;
-  border: 1px solid #f1f1f1;
-  position: relative;
-  z-index: 2;
-}
-
-.singleArticle a {
-  color: black;
   font-size: 2rem;
+  line-height: 3.1rem;
+  font-family: "Roboto Slab", serif;
+  padding: 10px 0 20px 0;
+}
+
+.projectItemRow .projectItemContent .heroBtn {
+  font-size: 2rem;
+}
+
+.projectItemRow .projectItemContent .heroBtn .fa-github-alt {
+  margin-right: 10px;
+}
+
+.articles {
+  background: #171117;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/wlc-bg1.jpg);
+}
+
+.articles strong {
+  -webkit-text-stroke: 1px #2a2d34;
+}
+
+.articles .articleHome,
+.articles .articleList {
+  height: 100%;
+}
+
+.articles .articleList {
+  width: 100%;
+}
+
+.articles .articlePreview {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.articles .articlePreview:hover {
+  background-color: #171117;
+}
+
+.articles .articlePreview a {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1500px;
+  padding: 35px 0;
+}
+
+.articles .articlePreview .articleTitle {
+  font-size: 3.6rem;
+  font-family: "Roboto Slab", serif;
+  padding-bottom: 10px;
+}
+
+.articles .articlePreview .fa-external-link-alt {
+  font-size: 4rem;
+  padding-left: 15px;
+  color: #08d665 !important;
+}
+
+.articles .articlePreview .articleTitle,
+.articles .articlePreview .fa-external-link-alt,
+.articles .articlePreview .articleSubText {
+  color: #ebebeb;
+}
+
+.articles .articlePreview .articleData {
+  font-size: 2rem;
+  padding-bottom: 20px;
   font-family: "Fira Code", monospace;
+  color: #08d665;
+  font-style: italic;
+}
+
+.articles .articlePreview .articleSubText {
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  font-family: "Arvo", serif;
+}
+
+.articles .moreArticles {
+  font-size: 2.4rem;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  color: #08d665;
+  margin-top: -15px;
+  padding-bottom: 25px;
   font-weight: 700;
 }
 
-.singleArticle p {
-  color: black;
-  font-size: 1.7rem;
-  font-family: "Roboto Slab", serif;
-  padding: 30px 0;
-}
-
-.singleArticle .readmoreBtn {
-  color: #22cd6f;
-}
-
-.singleArticle .fa-long-arrow-alt-right {
-  padding-right: 7px;
-}
-
-.articleCarousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .contact {
-  color: #ebebeb;
   font-family: "Roboto Slab", serif;
+  color: #ebebeb;
+  position: relative;
+  background-color: #171117;
+  z-index: 1;
+  padding-top: 0;
+  margin-top: 100px;
+}
+
+.contact .clipOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: #2a2d34;
+  position: absolute;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
 }
 
 .contact .flexContainer {
@@ -691,50 +757,69 @@ footer span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .contact .flexContainer .formContent {
-  width: 50%;
-  height: 100%;
-  font-size: 3rem;
+  width: 49%;
+  font-size: 2.8rem;
 }
 
-.contact .flexContainer .formContent p:first-of-type {
+.contact .flexContainer .formContent p:nth-child(-n + 3) {
   padding-bottom: 30px;
-}
-
-.contact .flexContainer .formContent .fa-paper-plane {
-  padding-right: 7px;
 }
 
 .contact .flexContainer .formContent a {
   text-decoration: underline;
-  color: #0d6328;
+  color: #08d665;
 }
 
 .contact .flexContainer .linkContainer {
+  width: 75%;
   margin-top: 50px;
   font-size: 5.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact .flexContainer .linkContainer .fab,
 .contact .flexContainer .linkContainer .far {
-  padding: 10px 10px;
+  color: #ebebeb;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.contact .flexContainer .linkContainer .fab:first-of-type {
-  padding-left: 0;
+.contact .flexContainer .linkContainer .fab:hover,
+.contact .flexContainer .linkContainer .far:hover {
+  color: #08d665;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .formContainer {
   width: 50%;
-  padding: 50px 20px;
-  border: 1px solid red;
+  min-width: 500px;
+  height: 100%;
+  min-height: 630px;
+  max-height: 600px;
+  margin-top: -15px;
   font-size: 2rem;
+  border: 2px solid #171117;
+  background-color: #171117;
+  border-radius: 14px;
 }
 
 .formContainer fieldset {
@@ -745,36 +830,64 @@ footer span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: none;
+}
+
+.formContainer fieldset,
+.formContainer .heroBtn {
+  padding: 20px;
 }
 
 .formContainer label {
-  padding: 15px 0;
-  font-family: "Fira Code", monospace;
+  font-family: "Roboto Slab", serif;
+  font-size: 2.3rem;
+  padding: 10px 0;
+}
+
+.formContainer label:first-of-type {
+  padding-top: 0;
+}
+
+.formContainer textarea {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  padding-right: 15px;
 }
 
 .formContainer input,
 .formContainer textarea {
   padding: 15px;
+  font-size: 1.7rem;
+  font-family: "Fira Code", monospace;
 }
 
 .formContainer input::-webkit-input-placeholder,
 .formContainer textarea::-webkit-input-placeholder {
-  font-family: "Roboto Slab", serif;
+  font-family: "Fira Code", monospace;
 }
 
 .formContainer input:-ms-input-placeholder,
 .formContainer textarea:-ms-input-placeholder {
-  font-family: "Roboto Slab", serif;
+  font-family: "Fira Code", monospace;
 }
 
 .formContainer input::-ms-input-placeholder,
 .formContainer textarea::-ms-input-placeholder {
-  font-family: "Roboto Slab", serif;
+  font-family: "Fira Code", monospace;
 }
 
 .formContainer input::placeholder,
 .formContainer textarea::placeholder {
-  font-family: "Roboto Slab", serif;
+  font-family: "Fira Code", monospace;
+}
+
+.formContainer .heroBtn {
+  width: 140px;
+  margin-left: 20px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -785,11 +898,12 @@ footer span {
 
 .heroBtn {
   display: inline-block;
-  margin: 6px;
+  position: relative;
+  margin: 6px 6px 6px 0;
+  padding: 0.5em 1.5em;
   font-size: 1.7rem;
   font-family: "Fira Code", monospace;
   line-height: 2.42rem;
-  padding: 0.5em 1.5em;
   font-weight: 700;
   border-width: 2px;
   border-radius: 2px;
@@ -799,14 +913,13 @@ footer span {
       -ms-user-select: none;
           user-select: none;
   vertical-align: bottom;
-  position: relative;
   background-color: #171117;
   -webkit-box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
           box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 .heroBtn:hover {
-  text-shadow: 0 0 33px rgba(82, 193, 31, 0.75), 0 -1px 0 rgba(0, 0, 0, 0.9);
+  text-shadow: 0 0 33px #ebebeb, 0 -1px 0 rgba(0, 0, 0, 0.9);
 }
 
 html {
@@ -852,7 +965,8 @@ p,
 i,
 ul,
 li,
-nav {
+nav,
+fieldset {
   padding: 0;
   margin: 0;
 }
