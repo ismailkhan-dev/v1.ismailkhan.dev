@@ -9,11 +9,19 @@ header {
   background-image: linear-gradient(to right, $offBlack 0%, $darkPurple 100%);
   color: $neonGreen !important;
 
+  .hamburgerMenu {
+    display: none;
+    min-height: 40px;
+    min-width: 40px;
+    margin-top: 5px;
+  }
+
   .menuToggleContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0.5rem 6rem;
+    margin: 0.5rem 0 0 6rem;
+    min-width: 170px;
 
     .menuToggle {
       height: 50px;
@@ -28,7 +36,6 @@ header {
 
   ul {
     display: flex;
-    padding: 15px 0 10px 20px;
     justify-content: space-around;
     align-content: center;
     font-weight: 700;
@@ -37,24 +44,26 @@ header {
     li {
       display: flex;
       align-items: center;
+
       a {
         font-family: $bodyFont;
         font-size: 1.8rem;
         text-transform: uppercase;
-        padding: 0 15px;
+        padding: 17px 15px;
       }
     }
   }
-
 }
 
 .siteLogo {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px;
-    transition: transform 0.2s;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  transition: transform 0.2s;
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
   }
+}
+
+// hamburger menu

@@ -250,6 +250,13 @@ header {
   color: #08d665 !important;
 }
 
+header .hamburgerMenu {
+  display: none;
+  min-height: 40px;
+  min-width: 40px;
+  margin-top: 5px;
+}
+
 header .menuToggleContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,7 +268,8 @@ header .menuToggleContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0.5rem 6rem;
+  margin: 0.5rem 0 0 6rem;
+  min-width: 170px;
 }
 
 header .menuToggleContainer .menuToggle {
@@ -278,7 +286,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 0 10px 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-line-pack: center;
@@ -300,7 +307,7 @@ header ul li a {
   font-family: "Fira Code", monospace;
   font-size: 1.8rem;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 17px 15px;
 }
 
 .siteLogo {
@@ -647,7 +654,6 @@ footer .siteLogo:hover {
 }
 
 .articles {
-  background: #171117;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -920,6 +926,24 @@ footer .siteLogo:hover {
 
 .heroBtn:hover {
   text-shadow: 0 0 33px #ebebeb, 0 -1px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  header nav {
+    display: none;
+  }
+  header .hamburgerMenu {
+    display: block;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 320px) {
+  header .menuToggleContainer {
+    margin: 0.5rem 0;
+  }
 }
 
 html {
