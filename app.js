@@ -1,5 +1,20 @@
-// libraries to use
-// particle.js https://vincentgarreau.com/particles.js/#bubble
+// namespace object
+const app = {};
 
-console.log("hello world!");
+// initialize app
+app.init = function () {
+  console.log("hello world");
 
+  // import overlay menu
+  $(".response--main-navigation").basicResponsiveMenu({
+    browserWidth: 960,
+    animate: "true",
+    slideDir: "right",
+    slideSpeed: 500,
+  });
+};
+
+// doc ready
+$(function () {
+  app.init();
+});

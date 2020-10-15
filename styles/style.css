@@ -268,6 +268,9 @@ header .menuToggleContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0.5rem 0 0 6rem;
   min-width: 170px;
 }
@@ -323,6 +326,60 @@ header ul li a {
 .siteLogo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.response--site-menu {
+  background: transparent;
+}
+
+.response--main-navigation.mobile-nav .response--site-menu {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2a2d34), to(#171117));
+  background-image: linear-gradient(to right, #2a2d34 0%, #171117 100%);
+}
+
+.show-nav {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.response--main-navigation.mobile-nav.expanded .response--site-menu {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: inherit;
+}
+
+.response--main-navigation.mobile-nav.expanded .response--site-menu .hide-nav {
+  background: #2a2d34;
+  font-family: "Fira Code", monospace;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mobile-nav.expanded {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.mobile-nav.expanded li {
+  margin: 10px 0;
+}
+
+.mobile-nav.expanded a {
+  font-size: 3rem;
 }
 
 footer {
@@ -742,7 +799,7 @@ footer .siteLogo:hover {
   background-color: #171117;
   z-index: 1;
   padding-top: 0;
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .contact .clipOverlay {
@@ -930,9 +987,6 @@ footer .siteLogo:hover {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  header nav {
-    display: none;
-  }
   header .hamburgerMenu {
     display: block;
   }

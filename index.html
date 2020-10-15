@@ -9,7 +9,9 @@
       name="keywords"
       content="Ismail Khan, Web Developer, Front-End, Toronto"
     />
-    <!-- import styles -->
+    <!-- import overlay menu css -->
+    <link rel="stylesheet" href="./styles/basicResponsiveMenu.css">
+    <!-- import style.css -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- google fonts -->
     <link
@@ -45,8 +47,8 @@
             /></a>
           </div>
 
-          <nav>
-            <ul>
+          <nav class="response--main-navigation">
+            <ul class="response--site-menu">
               <li><a href="#home">Home</a></li>
               <li><a href="#bio">About</a></li>
               <li><a href="#skills">Toolkit</a></li>
@@ -56,14 +58,6 @@
             </ul>
           </nav>
 
-          <!-- hamburger icon on scale down -->
-          <a href="" class="hamburgerMenu">
-            <img
-              src="./assets/hamburger.svg"
-              alt="Hamburger Menu for smaller screens."
-              srcset=""
-            />
-          </a>
         </div>
       </div>
     </header>
@@ -144,7 +138,11 @@
           <!-- hero avatar -->
           <div class="heroImage">
             <div class="heroImgContainer">
-              <img src="./assets/hero-img.png" alt="Hero Avatar, Quarantine Mode." class="heroAvatar" />
+              <img
+                src="./assets/hero-img.png"
+                alt="Hero Avatar, Quarantine Mode."
+                class="heroAvatar"
+              />
             </div>
           </div>
         </div>
@@ -152,7 +150,7 @@
     </section>
 
     <!-- bio section -->
-    <section class="bio">
+    <section id="bio" class="bio">
       <div class="wrapper">
         <!-- heading text -->
         <div class="headingContainer">
@@ -197,7 +195,10 @@
 
           <div class="profilePic">
             <!-- profile picture -->
-            <img src="/assets/profile-pic.jpg" alt="Profile picture of Ismail Khan, Web Developer." />
+            <img
+              src="/assets/profile-pic.jpg"
+              alt="Profile picture of Ismail Khan, Web Developer."
+            />
           </div>
         </div>
       </div>
@@ -207,7 +208,7 @@
     <div class="divider"></div>
 
     <!-- skills section  -->
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="wrapper">
         <h2 class="sectionHeading">Toolkit</h2>
         <div class="centerContainer">
@@ -221,7 +222,10 @@
               <p>CSS3</p>
             </div>
             <div class="skill">
-              <img src="./assets/skills-icons/javascript.svg" alt="JavaScript" />
+              <img
+                src="./assets/skills-icons/javascript.svg"
+                alt="JavaScript"
+              />
               <p>JavaScript</p>
             </div>
             <div class="skill">
@@ -283,7 +287,10 @@
         <!-- project 01 -->
         <div class="projectItemRow">
           <div class="projectItemDisplay">
-            <img src="./assets/project-clips/giphy-sentiment.png" alt="Giphy Sentiment React App" />
+            <img
+              src="./assets/project-clips/giphy-sentiment.png"
+              alt="Giphy Sentiment React App"
+            />
           </div>
 
           <div class="projectItemContent">
@@ -326,7 +333,7 @@
     </section>
 
     <!-- article section -->
-    <section class="articles">
+    <section id="articles" class="articles">
       <div class="wrapper">
         <!-- heading text -->
         <div class="headingContainer">
@@ -572,7 +579,11 @@
     <footer>
       <!-- logo -->
       <a href="#home"
-        ><img src="./assets/siteLogo.png" alt="Site Logo, IIK" srcset="" class="siteLogo"
+        ><img
+          src="./assets/siteLogo.png"
+          alt="Site Logo, IIK"
+          srcset=""
+          class="siteLogo"
       /></a>
 
       <!-- my name and copyright -->
@@ -580,6 +591,8 @@
       <p>Copyright © 2020</p>
     </footer>
   </body>
-  <!-- js script -->
+  <!-- overlay menu -->
+  <script src="./plugins/basicResponsiveMenu.js"></script>
+  <!-- javscript files -->
   <script src="app.js"></script>
 </html>
