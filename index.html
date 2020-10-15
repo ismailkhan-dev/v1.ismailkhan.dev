@@ -10,7 +10,7 @@
       content="Ismail Khan, Web Developer, Front-End, Toronto"
     />
     <!-- import overlay menu css -->
-    <link rel="stylesheet" href="./styles/basicResponsiveMenu.css">
+    <link rel="stylesheet" href="./styles/basicResponsiveMenu.css" />
     <!-- import style.css -->
     <link rel="stylesheet" href="./styles/style.css" />
     <!-- google fonts -->
@@ -42,22 +42,20 @@
               ><img
                 src="./assets/siteLogo.png"
                 alt="Site Logo, IIK"
-                srcset=""
                 class="siteLogo"
             /></a>
           </div>
 
           <nav class="response--main-navigation">
             <ul class="response--site-menu">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#bio">About</a></li>
-              <li><a href="#skills">Toolkit</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#articles">Articles</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#home" aria-label="Home">Home</a></li>
+              <li><a href="#bio" aria-label="About">About</a></li>
+              <li><a href="#skills" aria-label="Toolkit">Toolkit</a></li>
+              <li><a href="#projects" aria-label="Projects">Projects</a></li>
+              <li><a href="#articles" aria-label="Articles">Articles</a></li>
+              <li><a href="#contact" aria-label="Contact">Contact</a></li>
             </ul>
           </nav>
-
         </div>
       </div>
     </header>
@@ -84,6 +82,7 @@
                   href="https://github.com/ismailkhanio"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Github"
                   ><i class="fab fa-github"></i
                 ></a>
                 <!-- Linkedin -->
@@ -91,6 +90,7 @@
                   href="https://www.linkedin.com/in/ismailkhanio/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                   ><i class="fab fa-linkedin"></i
                 ></a>
                 <!-- Twitter -->
@@ -98,6 +98,7 @@
                   href="https://twitter.com/ismailkhanio"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Twitter"
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <!-- Medium -->
@@ -105,6 +106,7 @@
                   href="https://medium.com/@ismail.khan"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Medium"
                   ><i class="fab fa-medium"></i
                 ></a>
                 <!-- Codepen -->
@@ -112,6 +114,7 @@
                   href="https://codepen.io/ismailkn"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Codepen"
                   ><i class="fab fa-codepen"></i
                 ></a>
                 <!-- Dev.to -->
@@ -119,10 +122,11 @@
                   href="https://dev.to/ismailkhanio"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Dev.to"
                   ><i class="fab fa-dev"></i
                 ></a>
                 <!-- Email -->
-                <a href="mailto:me@ismailkhan.io"
+                <a href="mailto:me@ismailkhan.io" aria-label="Email"
                   ><i class="far fa-paper-plane"></i
                 ></a>
               </div>
@@ -131,6 +135,7 @@
               href="./assets/ismail-khan-resume.pdf"
               target="_blank"
               class="btn heroBtn"
+              aria-label="Download Resume"
               >Download Resume</a
             >
           </div>
@@ -189,7 +194,9 @@
               also following my passion in building rich web applications!
             </p>
             <div>
-              <a href="#contact" class="btn heroBtn">Contact Me</a>
+              <a href="#contact" class="btn heroBtn" aria-label="Contact Me"
+                >Contact Me</a
+              >
             </div>
           </div>
 
@@ -472,12 +479,15 @@
                 href="./assets/ismail-khan-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="My resume download"
                 >here</a
               >.
             </p>
             <p>
               Email:
-              <a href="mailto:me@ismailkhan.io">me@ismailkhan.io</a>
+              <a href="mailto:me@ismailkhan.io" aria-label="Email me"
+                >me@ismailkhan.io</a
+              >
             </p>
             <!-- social media links -->
             <div class="linkContainer">
@@ -486,6 +496,7 @@
                 href="https://github.com/ismailkhanio"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Github"
                 ><i class="fab fa-github"></i
               ></a>
               <!-- Linkedin -->
@@ -493,6 +504,7 @@
                 href="https://www.linkedin.com/in/ismailkhanio/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
                 ><i class="fab fa-linkedin"></i
               ></a>
               <!-- Twitter -->
@@ -500,6 +512,7 @@
                 href="https://twitter.com/ismailkhanio"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
                 ><i class="fab fa-twitter"></i
               ></a>
               <!-- Medium -->
@@ -507,6 +520,7 @@
                 href="https://medium.com/@ismail.khan"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Medium"
                 ><i class="fab fa-medium"></i
               ></a>
               <!-- Codepen -->
@@ -514,6 +528,7 @@
                 href="https://codepen.io/ismailkn"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Codepen"
                 ><i class="fab fa-codepen"></i
               ></a>
               <!-- Dev.to -->
@@ -521,6 +536,7 @@
                 href="https://dev.to/ismailkhanio"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Dev.to"
                 ><i class="fab fa-dev"></i
               ></a>
             </div>
@@ -536,7 +552,8 @@
               method="POST"
             >
               <fieldset id="fs-frm-inputs">
-                <label for="full-name">Name</label>
+                <legend class="sr-only">Get in touch with me</legend>
+                <label for="fullName">Name</label>
                 <input
                   type="text"
                   name="name"
