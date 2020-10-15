@@ -436,8 +436,8 @@ footer .siteLogo:hover {
 }
 
 .home {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22, 65, 13, 0.7)), to(rgba(100, 218, 100, 0.6))), url(https://data.whicdn.com/images/254374461/original.gif);
-  background-image: linear-gradient(to right bottom, rgba(22, 65, 13, 0.7), rgba(100, 218, 100, 0.6)), url(https://data.whicdn.com/images/254374461/original.gif);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22, 65, 13, 0.7)), to(rgba(100, 218, 100, 0.6))), url(../assets/home/homebg-gif2.gif);
+  background-image: linear-gradient(to right bottom, rgba(22, 65, 13, 0.7), rgba(100, 218, 100, 0.6)), url(../assets/home/homebg-gif2.gif);
   background-size: cover;
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
@@ -1053,8 +1053,8 @@ small {
 
 .headingTag {
   font-family: "Arvo", serif;
-  font-size: clamp(2rem, 2.6vw, 3rem);
-  line-height: 1.5em;
+  font-size: clamp(2rem, 2.4vw, 2.7rem);
+  line-height: 1.2em;
   width: 30vw;
   padding: 10px;
   padding-left: 20px;
