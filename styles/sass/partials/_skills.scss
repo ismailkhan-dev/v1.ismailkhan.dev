@@ -1,5 +1,4 @@
 .skills {
-  // clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 87%);
   background: $darkPurple;
   background-image: url(../assets/skills-bg.png);
   background-repeat: no-repeat;
@@ -11,6 +10,7 @@
   .sectionHeading {
     text-align: center;
     padding-bottom: 20px;
+    font-size: clamp(4.5rem, 3.2vw, 6rem);
   }
 
   .sectionHeading,
@@ -20,7 +20,6 @@
 }
 
 .centerContainer {
-  // height: 50vh;
   max-width: 700px;
   width: 80%;
   margin: 0 auto;

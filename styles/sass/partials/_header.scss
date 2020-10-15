@@ -8,6 +8,7 @@ header {
   border-bottom: 0.1rem solid $darkPurple;
   background-image: linear-gradient(to right, $offBlack 0%, $darkPurple 100%);
   color: $neonGreen !important;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.4);
 
   .hamburgerMenu {
     display: none;

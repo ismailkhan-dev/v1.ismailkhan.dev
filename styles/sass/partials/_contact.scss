@@ -22,7 +22,8 @@
 
     .formContent {
       width: 49%;
-      font-size: 2.8rem;
+      font-size: clamp(1.8rem, 2vw, 2.8rem);
+      padding-right: 10px;
 
       p:nth-child(-n + 3) {
         padding-bottom: 30px;
@@ -37,10 +38,15 @@
     .linkContainer {
       width: 75%;
       margin-top: 50px;
-      font-size: 5.6rem;
+      font-size: clamp(3rem, 3vw, 5rem);
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
+      flex-wrap: wrap;
+
+      a {
+        margin: 0px 25px 5px 0;
+      }
 
       .fab,
       .far {
@@ -66,7 +72,8 @@
   font-size: 2rem;
   border: 2px solid $darkPurple;
   background-color: $darkPurple;
-  border-radius: 14px;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
 
   fieldset {
     display: flex;

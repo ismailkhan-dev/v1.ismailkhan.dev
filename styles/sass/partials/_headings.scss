@@ -8,7 +8,6 @@
 .textContainer {
   position: relative;
   z-index: 2;
-  // border: 1px solid red;
   display: flex;
   align-items: flex-start;
   padding-top: 20px;
@@ -16,7 +15,7 @@
 
 strong {
   text-transform: uppercase;
-  font-size: 9.5rem;
+  font-size: clamp(8rem, 6.5vw, 9.5rem);
   letter-spacing: -1px;
   font-family: $bodyFont;
   -webkit-text-fill-color: transparent;
@@ -25,6 +24,15 @@ strong {
   left: 0;
   top: 1px;
   z-index: -1;
+}
+
+.projectStrong,
+.articlesStrong {
+  font-size: clamp(6.4rem, 6.5vw, 9.5rem);
+}
+
+.contactStrong {
+  font-size: clamp(7.3rem, 6.5vw, 9.5rem);
 }
 
 small {
@@ -51,7 +59,7 @@ small {
 
 .headingTag {
   font-family: $fontD;
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.6vw, 3rem);
   line-height: 1.5em;
   width: 30vw;
   padding: 10px;

@@ -1,3 +1,13 @@
+@media (max-width: 1440px) {
+  .projectItemRow {
+    flex-direction: column;
+
+    .projectItemDisplay,
+    .projectItemContent {
+      margin: 5px 0;
+    }
+  }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   // home
@@ -7,18 +17,94 @@
       width: 100%;
       margin-top: 10px;
       flex-direction: column-reverse;
+
+      .heroImage {
+        width: 40%;
+        min-width: 250px;
+        padding-left: 0;
+        height: 100%;
+      }
+
+      .heroContent {
+        width: 82%;
+        height: 70%;
+      }
     }
-    .heroImage {
-      width: 40%;
-      min-width: 250px;
-      padding-left: 0;
-      height: 100%;
+  }
+
+  // section headings
+  .headingContainer {
+    flex-direction: column;
+    width: 100%;
+    min-width: 288px;
+
+    .headingTag {
+      width: 100%;
+      margin-top: 25px;
+    }
+  }
+
+  // about
+  .bio .flexContainer {
+    flex-direction: column-reverse;
+    width: 100%;
+
+    .bioContents,
+    .profilePic {
+      width: 100%;
     }
 
-    .heroContent {
-      width: 82%;
-      height: 70%;
+    .bioContents {
+      margin-top: 20px;
     }
+  }
+
+  // skills
+  .skills .centerContainer .gridContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+
+    .skill {
+      border: 1px solid $white;
+    }
+
+    .skill img {
+      height: 5.5rem;
+    }
+  }
+
+  // projects
+  .projectItemRow {
+    flex-direction: column;
+    width: 100%;
+
+    .projectItemDisplay,
+    .projectItemContent {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  // contact
+  .contact .flexContainer {
+    flex-direction: column;
+    padding: 0;
+
+    .formContainer {
+      margin-top: 20px;
+      min-width: 288px;
+    }
+
+    .formContent,
+    .linkContainer,
+    .formContainer {
+      width: 100%;
+    }
+  }
+
+  // footer 
+  footer {
+    min-height: 23vh;
   }
 }
 
@@ -31,21 +117,53 @@
       }
     }
   }
+
+  // contact 
+  .contact .headingContainer {
+    padding-bottom: 30px;
+  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  // home
   .home {
     .heroContent {
       padding: 15px 10px;
       margin: 30px 0;
-      min-height: 600px;
+      min-height: 530px;
       min-width: 288px;
     }
 
     .heroImage {
       min-width: 250px;
     }
+  }
+
+  // skills
+  .skills .centerContainer {
+    max-width: none;
+    width: 100%;
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+    }
+    .skill img {
+      height: 3.5rem;
+    }
+  }
+
+  // projects
+  .projectItemRow {
+    .projectItemDisplay img {
+      min-height: 270px;
+      min-width: 288px;
+    }
+  }
+
+  // articles
+  .moreArticles {
+    text-align: center;
   }
 }
 

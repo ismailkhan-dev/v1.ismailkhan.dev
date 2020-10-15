@@ -10,14 +10,15 @@ footer {
   align-items: center;
   font-family: $bodyFont;
   padding-bottom: 20px;
+  margin: 0 auto;
 
   p {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 1.9vw, 2rem);
     color: $white;
     padding: 10px 0;
 
     &:nth-of-type(2) {
-      font-size: 1.7rem;
+      font-size: clamp(1.2rem, 1.9vw, 2rem);
       padding-top: 0;
     }
   }
@@ -31,9 +32,6 @@ footer {
     height: 75px;
     width: 75px;
     margin-bottom: 12px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
 
     &:hover {
       transform: scale(1.3);
