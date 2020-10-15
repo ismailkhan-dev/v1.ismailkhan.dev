@@ -11,12 +11,6 @@
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
-.heroAvatar {
-  background: $offBlack;
-  border-radius: 50%;
-  border: 2px solid $darkPurple;
-}
-
 .heroContainer {
   width: 100%;
   height: 70vh;
@@ -27,30 +21,36 @@
   justify-content: space-between;
   align-items: center;
 
+  .heroAvatar {
+    background: $offBlack;
+    border-radius: 50%;
+    border: 2px solid $darkPurple;
+  }
+
   // content
   .heroContent {
     color: $white;
     border: 2px solid $darkPurple;
     background: $offBlack;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     width: 100%;
-    min-height: 50vh;
 
     .heroTitle {
       font-family: $pairedFont;
-      font-size: 7.5rem;
+      font-size: clamp(5rem, 5.6vw, 7.5rem);
       text-transform: uppercase;
       letter-spacing: 0.5rem;
       padding-bottom: 20px;
     }
 
     .heroRole {
-      font-size: 3rem;
+      font-size: clamp(2.3rem, 3.1vw, 3rem);
       font-family: $bodyFont;
     }
 
     .heroTagline {
       font-size: 2.7rem;
+      font-size: clamp(1.8rem, 3.3vw, 2.7rem);
       font-family: $pairedFont;
       border-left: 10px solid $neonGreen;
       padding-left: 15px;
@@ -62,7 +62,7 @@
     .fab,
     .far {
       font-size: 4rem;
-      padding: 5px;
+      padding: 7px;
       transition: all 0.2s;
       &:hover {
         transform: scale(1.2);
@@ -85,13 +85,5 @@
   .linkContainer {
     width: 100%;
     padding-bottom: 20px;
-
-    a {
-      padding: 0 10px;
-
-      &:first-of-type {
-        padding-left: 0;
-      }
-    }
   }
 }

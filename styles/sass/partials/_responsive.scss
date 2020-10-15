@@ -1,32 +1,59 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  // header
-  header {
-    // hide main nav
-    nav {
-      // display: none;
+  // home
+  .home {
+    .heroContainer {
+      height: 100%;
+      width: 100%;
+      margin-top: 10px;
+      flex-direction: column-reverse;
     }
-    // hamburger menu
-    .hamburgerMenu {
-      display: block;
+    .heroImage {
+      width: 40%;
+      min-width: 250px;
+      padding-left: 0;
+      height: 100%;
+    }
+
+    .heroContent {
+      width: 82%;
+      height: 70%;
     }
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .home {
+    .heroContent {
+      .heroTagline {
+        margin: 30px 0;
+      }
+    }
+  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .home {
+    .heroContent {
+      padding: 15px 10px;
+      margin: 30px 0;
+      min-height: 600px;
+      min-width: 288px;
+    }
+
+    .heroImage {
+      min-width: 250px;
+    }
+  }
 }
 
 // smallest phone size
 @media (max-width: 320px) {
-
   header {
     .menuToggleContainer {
       margin: 0.5rem 0;
     }
-  }  
+  }
 }

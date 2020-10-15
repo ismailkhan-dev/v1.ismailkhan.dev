@@ -383,7 +383,7 @@ header ul li a {
 }
 
 footer {
-  min-height: 19vh;
+  min-height: 29vh;
   height: 100%;
   background-color: #171117;
   display: -webkit-box;
@@ -393,13 +393,14 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Fira Code", monospace;
+  padding-bottom: 20px;
 }
 
 footer p {
@@ -440,12 +441,6 @@ footer .siteLogo:hover {
           clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
-.heroAvatar {
-  background: #2a2d34;
-  border-radius: 50%;
-  border: 2px solid #171117;
-}
-
 .heroContainer {
   width: 100%;
   height: 70vh;
@@ -462,30 +457,36 @@ footer .siteLogo:hover {
           align-items: center;
 }
 
+.heroContainer .heroAvatar {
+  background: #2a2d34;
+  border-radius: 50%;
+  border: 2px solid #171117;
+}
+
 .heroContainer .heroContent {
   color: #ebebeb;
   border: 2px solid #171117;
   background: #2a2d34;
-  padding: 20px 30px;
+  padding: 1.25rem 1.875rem;
   width: 100%;
-  min-height: 50vh;
 }
 
 .heroContainer .heroContent .heroTitle {
   font-family: "Roboto Slab", serif;
-  font-size: 7.5rem;
+  font-size: clamp(5rem, 5.6vw, 7.5rem);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   padding-bottom: 20px;
 }
 
 .heroContainer .heroContent .heroRole {
-  font-size: 3rem;
+  font-size: clamp(2.3rem, 3.1vw, 3rem);
   font-family: "Fira Code", monospace;
 }
 
 .heroContainer .heroContent .heroTagline {
   font-size: 2.7rem;
+  font-size: clamp(1.8rem, 3.3vw, 2.7rem);
   font-family: "Roboto Slab", serif;
   border-left: 10px solid #08d665;
   padding-left: 15px;
@@ -496,7 +497,7 @@ footer .siteLogo:hover {
 .heroContainer .heroContent .fab,
 .heroContainer .heroContent .far {
   font-size: 4rem;
-  padding: 5px;
+  padding: 7px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -523,14 +524,6 @@ footer .siteLogo:hover {
   padding-bottom: 20px;
 }
 
-.heroContainer .linkContainer a {
-  padding: 0 10px;
-}
-
-.heroContainer .linkContainer a:first-of-type {
-  padding-left: 0;
-}
-
 .bio {
   background-color: #2a2d34;
   color: #ebebeb;
@@ -545,8 +538,9 @@ footer .siteLogo:hover {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   margin: 0 auto;
 }
@@ -574,9 +568,7 @@ footer .siteLogo:hover {
 }
 
 .bio .flexContainer .profilePic {
-  max-height: 600px;
   max-width: 400px;
-  height: 500px;
 }
 
 .bio .flexContainer .profilePic img {
@@ -585,6 +577,7 @@ footer .siteLogo:hover {
   -o-object-position: top;
      object-position: top;
   height: 100%;
+  max-height: 515px;
   border: 5px solid #171117;
   border-radius: 25px;
   -webkit-box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.9);
@@ -796,10 +789,7 @@ footer .siteLogo:hover {
   font-family: "Roboto Slab", serif;
   color: #ebebeb;
   position: relative;
-  background-color: #171117;
   z-index: 1;
-  padding-top: 0;
-  margin-top: 250px;
 }
 
 .contact .clipOverlay {
@@ -924,6 +914,8 @@ footer .siteLogo:hover {
   padding: 15px;
   font-size: 1.7rem;
   font-family: "Fira Code", monospace;
+  background-color: #ebebeb;
+  border-color: #2a2d34;
 }
 
 .formContainer input::-webkit-input-placeholder,
@@ -951,106 +943,6 @@ footer .siteLogo:hover {
   margin-left: 20px;
   font-size: 2.4rem;
   text-transform: uppercase;
-}
-
-.btn {
-  color: #ebebeb;
-  border-color: #171117;
-  text-shadow: 0 20px 50px rgba(82, 193, 31, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.9);
-}
-
-.heroBtn {
-  display: inline-block;
-  position: relative;
-  margin: 6px 6px 6px 0;
-  padding: 0.5em 1.5em;
-  font-size: 1.7rem;
-  font-family: "Fira Code", monospace;
-  line-height: 2.42rem;
-  font-weight: 700;
-  border-width: 2px;
-  border-radius: 2px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  vertical-align: bottom;
-  background-color: #171117;
-  -webkit-box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
-}
-
-.heroBtn:hover {
-  text-shadow: 0 0 33px #ebebeb, 0 -1px 0 rgba(0, 0, 0, 0.9);
-}
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  header .hamburgerMenu {
-    display: block;
-  }
-}
-
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
-@media (max-width: 320px) {
-  header .menuToggleContainer {
-    margin: 0.5rem 0;
-  }
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #2a2d34;
-}
-
-img {
-  width: 100%;
-}
-
-section {
-  width: 100%;
-  min-height: 100vh;
-  height: 100%;
-  padding: 100px 0;
-}
-
-.wrapper {
-  width: 90%;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-a,
-p,
-i,
-ul,
-li,
-nav,
-fieldset {
-  padding: 0;
-  margin: 0;
-}
-
-button {
-  outline: none;
 }
 
 .headingContainer {
@@ -1137,4 +1029,138 @@ small {
   height: 8px;
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#0d6328), to(transparent));
   background-image: linear-gradient(to right, transparent, #0d6328, transparent);
+}
+
+.btn {
+  color: #ebebeb;
+  border-color: #171117;
+  text-shadow: 0 20px 50px rgba(82, 193, 31, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.heroBtn {
+  display: inline-block;
+  position: relative;
+  margin: 6px 6px 6px 0;
+  padding: 0.5em 1.5em;
+  font-size: 1.7rem;
+  font-family: "Fira Code", monospace;
+  line-height: 2.42rem;
+  font-weight: 700;
+  border-width: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: bottom;
+  background-color: #171117 !important;
+  -webkit-box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 1px -1px rgba(255, 255, 255, 0.8) inset, 0 40px 20px -20px rgba(255, 255, 255, 0.08) inset, 0 -1px 1px -1px rgba(0, 0, 0, 0.7) inset, 0 -40px 20px -20px rgba(0, 0, 0, 0.06) inset, 0 11px 8px -3px rgba(0, 0, 0, 0.4), 0 4px 2px -2px rgba(0, 0, 0, 0.3), 0 1px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.heroBtn:hover {
+  text-shadow: 0 0 33px #ebebeb, 0 -1px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .home .heroContainer {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .home .heroImage {
+    width: 40%;
+    min-width: 250px;
+    padding-left: 0;
+    height: 100%;
+  }
+  .home .heroContent {
+    width: 82%;
+    height: 70%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .home .heroContent .heroTagline {
+    margin: 30px 0;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .home .heroContent {
+    padding: 15px 10px;
+    margin: 30px 0;
+    min-height: 600px;
+    min-width: 288px;
+  }
+  .home .heroImage {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  header .menuToggleContainer {
+    margin: 0.5rem 0;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2a2d34;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 100px 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+i,
+ul,
+li,
+nav,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: none;
 }
