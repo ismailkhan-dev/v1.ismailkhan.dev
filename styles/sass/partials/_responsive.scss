@@ -4,7 +4,9 @@
 
     .projectItemDisplay,
     .projectItemContent {
-      margin: 5px 0;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 800px;
     }
   }
 }
@@ -57,6 +59,10 @@
     .bioContents {
       margin-top: 20px;
     }
+    .profilePic img {
+      height: 100%;
+      width: 40%;
+    }
   }
 
   // skills
@@ -102,7 +108,7 @@
     }
   }
 
-  // footer 
+  // footer
   footer {
     min-height: 23vh;
   }
@@ -117,8 +123,16 @@
       }
     }
   }
-
-  // contact 
+  
+  // about
+  .bio .flexContainer {
+    .profilePic img {
+      height: 100%;
+      width: 60%;
+    }
+  }
+  
+  // contact
   .contact .headingContainer {
     padding-bottom: 30px;
   }
@@ -137,6 +151,14 @@
 
     .heroImage {
       min-width: 250px;
+    }
+  }
+
+  // about
+  .bio .flexContainer {
+    .profilePic img {
+      height: 100%;
+      width: 100%;
     }
   }
 
