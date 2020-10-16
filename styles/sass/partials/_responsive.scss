@@ -14,6 +14,8 @@
 @media (max-width: 940px) {
   // home
   .home {
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+
     .heroContainer {
       height: 100%;
       width: 100%;
@@ -110,20 +112,22 @@
 
   // footer
   footer {
-    min-height: 23vh;
+    min-height: 35vh;
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .home {
+        // clip-path: polygon(0 0, 100% 0, 100% 99vh, 0 100%);
+
     .heroContent {
       .heroTagline {
         margin: 30px 0;
       }
     }
   }
-  
+
   // about
   .bio .flexContainer {
     .profilePic img {
@@ -131,7 +135,7 @@
       width: 60%;
     }
   }
-  
+
   // contact
   .contact .headingContainer {
     padding-bottom: 30px;
@@ -142,6 +146,7 @@
 @media (max-width: 480px) {
   // home
   .home {
+    // clip-path: polygon(0 0, 100% 0, 100% 120vh, 0 100%);
     .heroContent {
       padding: 15px 10px;
       margin: 30px 0;

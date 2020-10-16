@@ -385,7 +385,7 @@ header ul li a {
 }
 
 footer {
-  min-height: 39vh;
+  min-height: 35vh;
   height: 100%;
   background-color: #171117;
   display: -webkit-box;
@@ -1131,6 +1131,10 @@ small {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  .home {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  }
   .home .heroContainer {
     height: 100%;
     width: 100%;
@@ -1220,7 +1224,7 @@ small {
     width: 100%;
   }
   footer {
-    min-height: 23vh;
+    min-height: 35vh;
   }
 }
 
